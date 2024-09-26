@@ -1,15 +1,15 @@
 import "./App.css";
-import home  from './home';
-import mall from './mall';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { TonConnectButton } from "@tonconnect/ui-react";
+import { Counter } from "./components/Counter";
+import { Jetton } from "./components/Jetton";
+import { TransferTon } from "./components/TransferTon";
 import styled from "styled-components";
 import { Button, FlexBoxCol, FlexBoxRow } from "./components/styled/styled";
+import { useTonConnect } from "./hooks/useTonConnect";
+import { CHAIN } from "@tonconnect/protocol";
 import "@twa-dev/sdk";
-import checkout from "./checkout";
 
-const Home = home;
-const Mall = mall;
-const Checkout = checkout;
+
 const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
@@ -27,31 +27,30 @@ const AppContainer = styled.div`
   margin: 0 auto;
 `;
 
-function App() {
- 
+function checkout() {
+  const { network } = useTonConnect();
+
   return (
-    
     <StyledApp>
       <AppContainer>
-      <BrowserRouter>
-    <Routes>
-        <Route path="/" Component={Home}/>
-        <Route path="/mall" Component={Mall}/>
-        <Route path="/checkout" Component={Checkout}/>
-   
-        </Routes>
-        </BrowserRouter>
         <FlexBoxCol>
           <FlexBoxRow>
-         
+            <TonConnectButton />
             <Button>
+              {network
+                ? network === CHAIN.MAINNET
+                  ? "mainnet"
+                  : "testnet"
+                : "N/A"}
             </Button>
           </FlexBoxRow>
-
+          <Counter />
+          <TransferTon />
+          <Jetton />
         </FlexBoxCol>
       </AppContainer>
     </StyledApp>
   );
 }
 
-export default App;
+export default checkout;
