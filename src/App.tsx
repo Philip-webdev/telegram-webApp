@@ -43,9 +43,16 @@ function App() {
         </BrowserRouter>
         <FlexBoxCol>
           <FlexBoxRow>
-         
-            <Button>
+         <div style={{display:'flex',justifyContent:'space-between',top:'100%', bottom:'0%'}}>
+            <Button style={{marginTop:'100%', marginRight:'7px'}}>
+              fav
             </Button>
+            <Button style={{marginTop:'100%', marginRight:'7px'}}>wallet
+            </Button>
+            <Button style={{marginTop:'100%', marginRight:'7px'}}>delivery
+            </Button> <Button style={{marginTop:'100%',  marginRight:'7px'}}>Mining
+            </Button>
+            </div>
           </FlexBoxRow>
 
         </FlexBoxCol>
