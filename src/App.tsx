@@ -1,15 +1,15 @@
 import "./App.css";
-import home  from './home';
-import mall from './mall';
+import home  from './components/home';
+import mall from './components/mall';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 import { Button, FlexBoxCol, FlexBoxRow } from "./components/styled/styled";
 import "@twa-dev/sdk";
-import checkout from "./checkout";
+//import checkout from "./components/checkout";
 
 const Home = home;
 const Mall = mall;
-const Checkout = checkout;
+//const Checkout = checkout;
 const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
@@ -33,14 +33,8 @@ function App() {
     
     <StyledApp>
       <AppContainer>
-      <BrowserRouter>
-    <Routes>
-        <Route path="/" Component={Home}/>
-        <Route path="/mall" Component={Mall}/>
-        <Route path="/checkout" Component={Checkout}/>
-   
-        </Routes>
-        </BrowserRouter>
+     
+        <Home/>
         <FlexBoxCol>
           <FlexBoxRow>
          <div style={{display:'flex',justifyContent:'space-between',top:'100%', bottom:'0%'}}>

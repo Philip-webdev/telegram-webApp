@@ -1,6 +1,6 @@
 
 import 'react-icons/bs';
-import { Button } from "./components/styled/styled";
+import { Button } from "./styled/styled";
 import { Bs1Circle, BsApple, BsPersonBoundingBox, BsPersonCircle, BsPersonFill } from 'react-icons/bs';
 
 function home(){
