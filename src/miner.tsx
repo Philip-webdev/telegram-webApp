@@ -13,7 +13,7 @@ function miner(){
         const result = {point: points}
         const value = setValue(result.point)
     
-        localStorage.setItem('newPoint', value);
+      //  localStorage.setItem('newPoint', value);
     
         }
     }
