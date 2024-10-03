@@ -1,7 +1,9 @@
 
 import 'react-icons/bs';
+import 'react-icons/fa';
 import { Button } from "./styled/styled";
 import { BsGift, BsPersonCircle } from 'react-icons/bs';
+import { FaAppleAlt, FaBacon, FaBreadSlice, FaCarrot } from 'react-icons/fa';
 
 function home(){
 const styles = {width:'330px'};
@@ -44,8 +46,8 @@ return(
         </div>
     </div>
     <br></br><br></br>
-    <div className="shelves"><button style={{ margin:'10px', padding:'7px',background:'white', border:'none', borderRadius:'7px'}}  onClick={food}>Food Items</button>
-    <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={fruits}>Fruits</button>
+    <div className="shelves"><button style={{ margin:'10px', padding:'7px',background:'white', border:'none', borderRadius:'7px'}}  onClick={food}> <FaBreadSlice/></button>
+    <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={fruits}><FaAppleAlt/> </button>
     <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={packaged}><BsGift/></button></div>
 
 <div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', justifySelf:'center' ,background:'none'}}>
