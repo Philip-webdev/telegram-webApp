@@ -20,7 +20,7 @@ const StyledApp = styled.div`
     background-color: #222;
     color: white;
   }
-  min-height: fit-content;
+  height: fit-content;
   padding: 20px 20px;
 `;
 
@@ -33,15 +33,15 @@ function App() {
  
   return (
     
-    <StyledApp style={{height:'auto'}}>
-      <AppContainer style={{height:'auto'}}>
+    <StyledApp}>
+      <AppContainer>
         <Home/><div style={{right:'0.1%',display:'flex',justifyContent:'space-evenly' ,height:'fit-content',background:'white', width:'100%', paddingRight:'10px', top:'100%',position:'absolute'}}>
-            <Button className="but" style={{left:'2%',bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}>
+            <Button  style={{left:'2%',bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}>
             <BsHeart/>   </Button>
-            <Button className="but" style={{bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsFillWalletFill/>
+            <Button  style={{bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsFillWalletFill/>
             </Button>
-              <Button className="but" style={{bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsCalendar2/>
-            </Button> <Button className="but" style={{bottom:'0%', background:'none', color:"rgb(46, 173, 200)"}}><BsStarFill/>
+              <Button style={{bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsCalendar2/>
+            </Button> <Button  style={{bottom:'0%', background:'none', color:"rgb(46, 173, 200)"}}><BsStarFill/>
             </Button>
             </div>
     
