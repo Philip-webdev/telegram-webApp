@@ -1,5 +1,4 @@
 import "./App.css";
-import "./hover.css";
 import { BsCalendar2, BsCalendarPlus, BsFillWalletFill, BsHeart, BsMinecart, BsStack, BsStackOverflow, BsStarFill, BsStars, BsWallet, BsWallet2, BsWalletFill} from 'react-icons/bs';
 import home  from './components/home';
 import mall from './components/mall';
@@ -20,7 +19,7 @@ const StyledApp = styled.div`
     background-color: #222;
     color: white;
   }
-  min-height: fit-content;
+  min-height: 100vh;
   padding: 20px 20px;
 `;
 
