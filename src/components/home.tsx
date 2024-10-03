@@ -8,7 +8,6 @@ import { FaAppleAlt, FaBacon, FaBreadSlice, FaCarrot, FaGift } from 'react-icons
 function home(){
 const styles = {width:'330px'};
  
-
    const packaged = () => {
     const translator  = document.getElementById('container');
     if(translator != null){
