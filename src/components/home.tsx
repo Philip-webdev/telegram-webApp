@@ -46,11 +46,11 @@ return(
         </div>
     </div>
     <br></br><br></br>
-    <div className="shelves" style={{zoom:'40%'}}><button style={{display:'inline' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'none', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice  style={{color:"rgb(46, 173, 200)"}}/> </button>
+    <div className="shelves" style={{zoom:'60%'}}><button style={{display:'inline' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'none', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice  style={{color:"rgb(46, 173, 200)"}}/> </button>
     <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={fruits}>Fruits  <FaAppleAlt style={{color:"rgb(46, 173, 200)"}}/> </button>
     <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift  style={{color:"rgb(46, 173, 200)"}}/></button></div>
 
-<div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', justifySelf:'center' ,background:'none', height:'inherit'}}>
+<div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', justifySelf:'center' , height:'inherit'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'fit-content', marginRight:'10px'}}>
     < section style={{display:'flex', zoom:'330%'}}>
