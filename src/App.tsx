@@ -1,4 +1,5 @@
 import "./App.css";
+import { BsCalendar2, BsCalendarPlus, BsFillWalletFill, BsHeart, BsMinecart, BsStack, BsStackOverflow, BsStarFill, BsStars, BsWallet, BsWallet2, BsWalletFill} from 'react-icons/bs';
 import home  from './components/home';
 import mall from './components/mall';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -37,14 +38,13 @@ function App() {
         <Home/>
         <FlexBoxCol>
           <FlexBoxRow>
-         <div style={{display:'flex',justifyContent:'space-between',top:'100%', bottom:'0%'}}>
-            <Button style={{marginTop:'100%', marginRight:'7px'}}>
-              fav
+         <div style={{display:'flex',justifyContent:'space-evenly',top:'100%', bottom:'0%'}}>
+            <Button style={{marginTop:'100%', marginRight:'30px'}}>
+            <BsHeart/>   </Button>
+            <Button style={{marginTop:'100%', marginRight:'30px'}}><BsFillWalletFill/>
             </Button>
-            <Button style={{marginTop:'100%', marginRight:'7px'}}>wallet
-            </Button>
-            <Button style={{marginTop:'100%', marginRight:'7px'}}>delivery
-            </Button> <Button style={{marginTop:'100%',  marginRight:'7px'}}>Mining
+              <Button style={{marginTop:'100%', marginRight:'30px'}}><BsCalendar2/>
+            </Button> <Button style={{marginTop:'100%', marginRight:'30px'}}><BsStarFill/>
             </Button>
             </div>
           </FlexBoxRow>

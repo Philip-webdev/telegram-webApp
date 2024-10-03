@@ -1,7 +1,7 @@
 
 import 'react-icons/bs';
 import { Button } from "./styled/styled";
-import { Bs1Circle, BsApple, BsPersonBoundingBox, BsPersonCircle, BsPersonFill } from 'react-icons/bs';
+import { BsGift, BsPersonCircle } from 'react-icons/bs';
 
 function home(){
 const styles = {width:'330px'};
@@ -40,13 +40,13 @@ return(
 <div style={{bottom:'0' }}>
     <div className="header" style={{display:'flex', justifyContent:'space-between'}}>
         <div style={{}}>Hi, fren</div><div>GroTon</div><div style={{borderRadius:'100%', background:'white', width:'auto', height:'auto', textAlign:'center'}}>
-         <BsPersonCircle/>
+         <BsPersonCircle/> 
         </div>
     </div>
     <br></br><br></br>
     <div className="shelves"><button style={{ margin:'10px', padding:'7px',background:'white', border:'none', borderRadius:'7px'}}  onClick={food}>Food Items</button>
     <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={fruits}>Fruits</button>
-    <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Package Products</button></div>
+    <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={packaged}><BsGift/></button></div>
 
 <div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', justifySelf:'center' ,background:'none'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
