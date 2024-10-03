@@ -35,7 +35,7 @@ function App() {
     
     <StyledApp>
       <AppContainer >
-        <Home/><div style={{right:'0.1%',display:'flex',justifyContent:'space-evenly' ,height:'fit-content',background:'white', width:'100%', paddingRight:'10px', top:'100%',position:'absolute'}}>
+        <Home/><div style={{right:'0.1%', bottom:'0%', display:'flex',justifyContent:'space-evenly' ,height:'fit-content',background:'white', width:'100%', paddingBottom:'10px', paddingRight:'10px',position:'fixed'}}>
             <Button  style={{left:'2%',bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}>
             <BsHeart/>   </Button>
             <Button  style={{bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsFillWalletFill/>
