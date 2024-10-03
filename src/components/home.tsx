@@ -49,11 +49,7 @@ return(
     <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={fruits}>Fruits  <FaAppleAlt style={{color:"rgb(46, 173, 200)"}}/> </button>
     <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift  style={{color:"rgb(46, 173, 200)"}}/></button></div>
 
-<<<<<<< HEAD
 <div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', justifySelf:'center' , height:'inherit'}}>
-=======
-<div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', justifySelf:'center' }}>
->>>>>>> 046f66fe4afea2254b9d098db3dfae1e6142ef55
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'fit-content', marginRight:'10px'}}>
     < section style={{display:'flex', zoom:'330%'}}>
