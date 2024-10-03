@@ -1,4 +1,5 @@
 import "./App.css";
+import "./index.css";
 import { BsCalendar2, BsCalendarPlus, BsFillWalletFill, BsHeart, BsMinecart, BsStack, BsStackOverflow, BsStarFill, BsStars, BsWallet, BsWallet2, BsWalletFill} from 'react-icons/bs';
 import home  from './components/home';
 import mall from './components/mall';
