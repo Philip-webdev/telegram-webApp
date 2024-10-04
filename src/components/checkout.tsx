@@ -1,4 +1,4 @@
-import "./App.css";
+import "../App.css";
 import { TonConnectButton } from "@tonconnect/ui-react";
 import { Counter } from "./Counter";
 import { Jetton } from "./Jetton";

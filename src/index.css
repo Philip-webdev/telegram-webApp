@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
+
+@media only screen and (min-width: 810px) {div div #wrapper{ margin-left: 50%; }}
 div, section{
   font-family: 'Lexend', sans-serif;
 }
