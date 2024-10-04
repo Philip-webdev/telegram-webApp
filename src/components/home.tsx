@@ -4,6 +4,7 @@ import '../index.css';
 import 'react-icons/fa';
 import { Button } from "./styled/styled";
 import { BsGift, BsPersonCircle } from 'react-icons/bs';
+import { BsCalendar2, BsCalendarPlus, BsFillWalletFill, BsHeart, BsMinecart, BsStack, BsStackOverflow, BsStarFill, BsStars, BsWallet, BsWallet2, BsWalletFill} from 'react-icons/bs';
 import { FaAppleAlt, FaBacon, FaBreadSlice, FaCarrot, FaGift } from 'react-icons/fa';
 
 function home(){
@@ -40,17 +41,19 @@ const food = ()=> {
 
 return(
 <div>
-    <div className="header" style={{display:'flex', justifyContent:'space-evenly'}}>
-        <div>Hi, fren</div><div>GroTon</div><div style={{borderRadius:'100%, width:'auto', height:'auto', textAlign:'center'}}>
-         <BsPersonCircle/> 
+    <div className="header" style={{display:'flex', justifyContent:'space-between'}}>
+        <div>Hi, fren</div><div>GroTon</div><div><BsPersonCircle/></div>
         </div>
-    </div>
-    <br></br><br></br>
-    <div className="shelves" style={{zoom:'70%'}}><button style={{display:'inline' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'none', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice  style={{color:"rgb(46, 173, 200)"}}/> </button>
-    <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={fruits}>Fruits  <FaAppleAlt style={{color:"rgb(46, 173, 200)"}}/> </button>
-    <button style={{ margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift  style={{color:"rgb(46, 173, 200)"}}/></button></div>
 
-<div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', justifySelf:'center' , height:'inherit'}}>
+    
+
+
+    <br></br><br></br>
+    <div className="shelves" style={{ fontFamily: 'Lexend' , zoom:'70%'}}><button style={{display:'inline', fontFamily: 'Lexend' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'none', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice/> </button>
+    <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={fruits}>Fruits  <FaAppleAlt/> </button>
+    <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
+
+<div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', marginLeft:'1%' , height:'inherit'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'fit-content', marginRight:'10px'}}>
     < section style={{display:'flex', zoom:'330%'}}>
@@ -110,7 +113,17 @@ return(
     </div>
 </div>
 </div>
+<div style={{right:'0.1%', bottom:'0%', display:'flex',justifyContent:'space-evenly' ,height:'fit-content',background:'white', width:'100%', paddingBottom:'10px', paddingRight:'10px',position:'fixed'}}>
+            <Button  style={{  fontFamily: 'Lexend' , left:'2%',bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}>
+            <BsHeart/>   </Button>
+            <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsFillWalletFill/>
+            </Button>
+              <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsCalendar2/>
+            </Button> <Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"rgb(46, 173, 200)"}}><BsStarFill/>
+            </Button>
+            </div>
 </div>
+
 );
 }
 
