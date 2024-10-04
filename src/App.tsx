@@ -36,8 +36,6 @@ function App() {
     <StyledApp>
       <AppContainer >
         <Home/>
-    
-  
       </AppContainer>
     </StyledApp>
   );

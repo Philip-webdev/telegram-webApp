@@ -53,9 +53,9 @@ return(
     <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={fruits}>Fruits  <FaAppleAlt/> </button>
     <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'none', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
 
-<div  style={{display:'flex', overflow:'hidden', width:styles.width, margin:'0', marginLeft:'1%' , height:'inherit'}}>
+<div  style={{display:'flex', overflow:'hidden', width:styles.width, marginLeft:'1%' , height:'fit-content'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
-    <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'fit-content', marginRight:'10px'}}>
+    <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'10px'}}>
     < section style={{display:'flex', zoom:'330%'}}>
 <div className="items" style={{borderRadius:'5px',margin:'5px',  height: '20px', width: '20px', backgroundColor: 'white'}}></div>
 <div className="items" style={{borderRadius:'5px', margin:'5px', height: '20px', width: '20px', backgroundColor: 'white'}}></div>
@@ -114,13 +114,13 @@ return(
 </div>
 </div>
 <div style={{right:'0.1%', bottom:'0%', display:'flex',justifyContent:'space-evenly' ,height:'fit-content',background:'white', width:'100%', paddingBottom:'10px', paddingRight:'10px',position:'fixed'}}>
-            <Button  style={{  fontFamily: 'Lexend' , left:'2%',bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}>
-            <BsHeart/>   </Button>
-            <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsFillWalletFill/>
-            </Button>
-              <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'35px', background:'none', color:"rgb(46, 173, 200)"}}><BsCalendar2/>
-            </Button> <Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"rgb(46, 173, 200)"}}><BsStarFill/>
-            </Button>
+            <Button  style={{  fontFamily: 'Lexend' , marginLeft:'30px',bottom:'0%', marginRight:'33px', background:'none', color:"black"}}>
+            <BsHeart/>  <p style={{zoom:'80%'}}>favs</p> </Button>
+            <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'32px', background:'none', color:"black"}}><BsFillWalletFill/>
+            <p style={{zoom:'80%'}}>wallet</p></Button>
+              <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'32px', background:'none', color:"black"}}><BsCalendar2/>
+              <p style={{zoom:'80%'}}>orders</p></Button> <Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"black"}}><BsStarFill/>
+              <p style={{zoom:'80%'}}>Tasks</p> </Button>
             </div>
 </div>
 
