@@ -4,7 +4,7 @@ import { BsCalendar2, BsCalendarPlus, BsFillWalletFill, BsHeart, BsMinecart, BsS
 import home  from './components/home';
 import mall from './components/mall';
 import myProfile from './components/avatar';
-import { BrowserRouter , Route, Routes} from "react-router-dom";
+import { HashRouter, Route, Routes} from "react-router-dom";
 import styled from "styled-components";
 import { Button, FlexBoxCol, FlexBoxRow } from "./components/styled/styled";
 import "@twa-dev/sdk";
@@ -33,11 +33,11 @@ const AppContainer = styled.div`
 function App() {
  
   return (
-    <div > <BrowserRouter>
+    <div > <HashRouter>
     <Routes>
     <Route path="/profile" Component={myProfile}/>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
     <StyledApp> 
       <AppContainer >
         <Home/>

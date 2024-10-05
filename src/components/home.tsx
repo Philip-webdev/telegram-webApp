@@ -2,9 +2,9 @@
 import 'react-icons/bs';
 import '../index.css';
 import 'react-icons/fa';
-
+import { useState } from 'react';
 import { Button } from "./styled/styled";
-import { BsGift, BsPersonCircle } from 'react-icons/bs';
+import './avatar';
 import { BsCalendar2, BsCalendarPlus, BsFillWalletFill, BsHeart, BsMinecart, BsStack, BsStackOverflow, BsStarFill, BsStars, BsWallet, BsWallet2, BsWalletFill} from 'react-icons/bs';
 import { FaAppleAlt, FaBacon, FaBreadSlice, FaCarrot, FaGift } from 'react-icons/fa';
 
@@ -38,12 +38,19 @@ const food = ()=> {
        
         }
     }
-   
+    const frens = 'name';
+        const name = document.getElementById('name')?.innerText
+        const [fren, setFren] = useState(frens);
 
+    const onSetname = ()=>{
+        if(name == " "){
+        const nameEntered = setFren(name);
+        }
+       }
 return(
 <div>
     <div className="header" style={{display:'flex', justifyContent:'space-between'}}>
-        <div>Hi, fren</div><div>GroTon</div><div style={{borderRadius:'100%'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></div>
+        <div>Hi, {fren}</div><div>GroTon</div><div style={{borderRadius:'100%'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></div>
         </div>
 
     
@@ -58,7 +65,7 @@ return(
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'10px'}}>
     < section style={{display:'flex', zoom:'330%'}}>
-<div className="items" style={{borderRadius:'5px',margin:'5px',  height: '20px', width: '20px', backgroundColor: 'white'}}></div>
+<div className="items" style={{borderRadius:'5px',margin:'5px',  height: '20px', width: '20px', backgroundColor: 'white'}}><img height='10px' width='10px' src='https://img.freepik.com/premium-photo/spaghetti-pasta-white-plate-blue-background_90380-516.jpg'/></div>
 <div className="items" style={{borderRadius:'5px', margin:'5px', height: '20px', width: '20px', backgroundColor: 'white'}}></div>
 <div className="items" style={{borderRadius:'5px', margin:'5px', height: '20px', width: '20px', backgroundColor: 'white'}}></div></section>
     
@@ -118,7 +125,7 @@ return(
             <Button  style={{  fontFamily: 'Lexend' , marginLeft:'30px',bottom:'0%', marginRight:'33px', background:'none', color:"black"}}>
             <BsHeart/>  <p style={{zoom:'80%'}}>favs</p> </Button>
             <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'32px', background:'none', color:"black"}}><BsFillWalletFill/>
-            <p style={{zoom:'80%'}}><a href='/profile' target="_blank">wallet</a></p></Button>
+            <p style={{zoom:'80%'}}><a href='/profile' style={{color:'black', textDecoration:'none'}}>wallet</a></p></Button>
               <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'32px', background:'none', color:"black"}}><BsCalendar2/>
               <p style={{zoom:'80%'}}>orders</p></Button> <Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"black"}}><BsStarFill/>
               <p style={{zoom:'80%'}}>Tasks</p> </Button>
