@@ -8,11 +8,14 @@ import { Button, FlexBoxCol, FlexBoxRow } from "./styled/styled";
 import { useTonConnect } from "../hooks/useTonConnect";
 import { CHAIN } from "@tonconnect/protocol";
 import "@twa-dev/sdk";
+import 'react-icons/bs';
+import {  BsArrowLeftCircle } from "react-icons/bs";
 
 
 const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
+   position: fixed;
 
   @media (prefers-color-scheme: dark) {
     background-color: #222;
@@ -35,6 +38,7 @@ function checkout() {
       <AppContainer>
         <FlexBoxCol>
           <FlexBoxRow>
+           <a href="#/home" style={{color:'black', textDecoration:'none'}}> <BsArrowLeftCircle style={{zoom:'150%'}}/></a>
             <TonConnectButton />
             <Button>
               {network

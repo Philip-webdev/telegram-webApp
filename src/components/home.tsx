@@ -11,6 +11,8 @@ import { FaAppleAlt, FaBacon, FaBreadSlice, FaCarrot, FaGift } from 'react-icons
 function home(){
 const styles = {width:'330px', maxWidth:'810px'};
  
+const commodity = {name:document.getElementById('')?.innerText, price:document.getElementById('')?.innerText}
+
    const packaged = () => {
     const translator  = document.getElementById('container');
     if(translator != null){
@@ -50,7 +52,7 @@ const food = ()=> {
 return(
 <div>
     <div className="header" style={{display:'flex', justifyContent:'space-between'}}>
-        <div>Hi, {fren}</div><div>GroTon</div><div style={{borderRadius:'100%'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></div>
+        <div>Hi, {fren}</div><div>GroTon</div><div style={{borderRadius:'100%'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
         </div>
 
     
@@ -124,16 +126,18 @@ return(
 <div style={{right:'0.1%', bottom:'0%', display:'flex',justifyContent:'space-evenly' ,height:'fit-content',background:'white', width:'100%', paddingBottom:'10px', paddingRight:'10px',position:'fixed'}}>
             <Button  style={{  fontFamily: 'Lexend' , marginLeft:'25px',bottom:'0%', marginRight:'32px', background:'none', color:"black"}}>
             <BsHeart/>  <p style={{zoom:'80%'}}>favs</p> </Button>
-            <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'30px', background:'none', color:"black"}}><BsFillWalletFill/>
-            <p style={{zoom:'80%'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}>wallet</a></p></Button>
+            <a href='#/Checkout' style={{color:'black', textDecoration:'none'}}> <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'30px', background:'none', color:"black"}}><BsFillWalletFill/>
+            <p style={{zoom:'80%'}}>wallet</p></Button></a>
               <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'27px', background:'none', color:"black"}}><BsCalendar2/>
-              <p style={{zoom:'80%'}}>orders</p></Button> <Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"black"}}><BsStarFill/>
-              <p style={{zoom:'80%'}}>Tasks</p> </Button>
+              <p style={{zoom:'80%'}}>orders</p></Button> <a href='#/task' style={{color:'black', textDecoration:'none'}}><Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"black"}}><BsStarFill/>
+              <p style={{zoom:'80%'}}>Tasks</p> </Button></a>
             </div>
 </div>
 
 );
+
 }
 
 
-export default home;    
+export default home; 
+  

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import 'react-icons/bs';
+import { BsArrowBarLeft, BsArrowLeftCircle } from "react-icons/bs";
 import styled from "styled-components";
 
 function myProfile(){
@@ -61,7 +63,7 @@ const StyledApp = styled.div`
 return(
     
     <div style={{ width: '100%'}}>
-       <StyledApp style={{ width: '100%'}}> <div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', border:'2px solid blue', borderRadius:'100%', width:'fit-content'}}>{avatar}</p>
+       <StyledApp style={{ width: '100%'}}> <a href="#/home" style={{color:'black', textDecoration:'none'}}><BsArrowLeftCircle/></a><div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', border:'2px solid blue', borderRadius:'100%', width:'fit-content'}}>{avatar}</p>
        </div>
        <div><h1>Your profile</h1>
        <p id="name">your name <input defaultValue='' type="text" placeholder="fren" style={{borderBottomColor:' white',border:'none', background:'none', borderRadius:'5px'}}/></p>
