@@ -125,7 +125,7 @@ return(
             <Button  style={{  fontFamily: 'Lexend' , marginLeft:'30px',bottom:'0%', marginRight:'33px', background:'none', color:"black"}}>
             <BsHeart/>  <p style={{zoom:'80%'}}>favs</p> </Button>
             <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'32px', background:'none', color:"black"}}><BsFillWalletFill/>
-            <p style={{zoom:'80%'}}><a href='/profile' style={{color:'black', textDecoration:'none'}}>wallet</a></p></Button>
+            <p style={{zoom:'80%'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}>wallet</a></p></Button>
               <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'32px', background:'none', color:"black"}}><BsCalendar2/>
               <p style={{zoom:'80%'}}>orders</p></Button> <Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"black"}}><BsStarFill/>
               <p style={{zoom:'80%'}}>Tasks</p> </Button>
