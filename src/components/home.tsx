@@ -124,7 +124,7 @@ return(
 </div>
 </section>
 <div style={{right:'0.1%', bottom:'0%', display:'flex',justifyContent:'space-evenly' ,height:'fit-content',background:'white', width:'100%', paddingBottom:'10px', paddingRight:'10px',position:'fixed'}}>
-            <Button  style={{  fontFamily: 'Lexend' , marginLeft:'25px',bottom:'0%', marginRight:'32px', background:'none', color:"black"}}>
+            <Button  style={{  fontFamily: 'Lexend' , marginLeft:'20px',bottom:'0%', marginRight:'27px', background:'none', color:"black"}}>
             <BsHeart/>  <p style={{zoom:'80%'}}>favs</p> </Button>
             <a href='#/Checkout' style={{color:'black', textDecoration:'none'}}> <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'30px', background:'none', color:"black"}}><BsFillWalletFill/>
             <p style={{zoom:'80%'}}>wallet</p></Button></a>
