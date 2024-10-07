@@ -50,7 +50,7 @@ function checkout() {
           </FlexBoxRow>
           <Counter />
           <TransferTon />
-          <Jetton />
+         
         </FlexBoxCol>
       </AppContainer>
     </StyledApp>

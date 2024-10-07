@@ -19,7 +19,7 @@ export function TransferTon() {
         <FlexBoxRow>
           <label>Amount </label>
           <Input
-            style={{ marginRight: 8 }}
+            style={{ marginRight: 8 ,width:'40%'}}
             type="number"
             value={tonAmount}
             onChange={(e) => setTonAmount(e.target.value)}
@@ -28,7 +28,7 @@ export function TransferTon() {
         <FlexBoxRow>
           <label>To </label>
           <Input
-            style={{ marginRight: 8 }}
+            style={{ marginRight: 8 , width:'40%'}}
             value={tonRecipient}
             onChange={(e) => setTonRecipient(e.target.value)}
           ></Input>

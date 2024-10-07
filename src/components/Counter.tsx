@@ -23,7 +23,7 @@ export function Counter() {
           <h3>Counter</h3>
           <FlexBoxRow>
             <b>Address</b>
-            <Ellipsis>{address}</Ellipsis>
+            <Ellipsis style={{width:'40%'}}>{address}</Ellipsis>
           </FlexBoxRow>
           <FlexBoxRow>
             <b>Value</b>
