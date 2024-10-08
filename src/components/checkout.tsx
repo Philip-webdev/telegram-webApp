@@ -20,7 +20,7 @@ const StyledApp = styled.div`
    font-family:'Lexend';
 
   @media (prefers-color-scheme: dark) {
-    background-color: #222;
+    background-color:  rgb(29, 40, 58);
     color: white;
   }
   min-height: 100vh;
@@ -40,7 +40,7 @@ function checkout() {
       <AppContainer>
         <FlexBoxCol>
           <FlexBoxRow>
-           <a href="#/home" style={{color:'black', textDecoration:'none'}}> <BsArrowLeftCircle style={{zoom:'150%'}}/></a>
+           <a href="#/home" style={{color:'black', textDecoration:'none'}}> <BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:'150%'}}/></a>
             <TonConnectButton />
             <Button>
               {network

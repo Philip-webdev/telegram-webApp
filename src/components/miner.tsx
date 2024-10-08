@@ -11,7 +11,7 @@ const StyledApp = styled.div`
   position: fixed;
  
   @media (prefers-color-scheme: dark) {
-    background-color: #222;
+    background-color:  rgb(29, 40, 58);
     color: white;
   }
   min-height: 100vh;
