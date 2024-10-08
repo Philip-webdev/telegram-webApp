@@ -90,13 +90,13 @@ return(
 
 <section style={{display:'flex', zoom:'330%'}}>
 <div className="items" style={{borderRadius:'5px',margin:'5px', height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
-    <img style={{margin:'5.5px', zoom:'40%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
+    <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
     <div style={{display:'flex'}}>
         <BsHeart style={{zoom:'40%',color:'black', margin:'1px'}}/> <BsPlusCircle style={{zoom:'40%',margin:'1px',color:'black'}}/>
         </div>
 </div>
 <div className="items" style={{borderRadius:'5px', margin:'5px', height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
-    <img style={{margin:'5.5px', zoom:'40%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
+    <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
     <div style={{display:'flex'}}>
         <BsHeart style={{zoom:'40%',color:'black', margin:'1px'}}/> <BsPlusCircle style={{zoom:'40%',margin:'1px',color:'black'}}/></div></div>
 
