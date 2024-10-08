@@ -18,7 +18,7 @@ export function Counter() {
     <div className="Container">
       <TonConnectButton />
 
-      <Card>
+      <Card style={{width:'300px'}}>
         <FlexBoxCol>
           <h3>Counter</h3>
           <FlexBoxRow>
@@ -29,7 +29,7 @@ export function Counter() {
             <b>Value</b>
             <div>{value ?? "Loading..."}</div>
           </FlexBoxRow>
-          <Button style={{width:'40%'}}
+          <Button 
             disabled={!connected}
             className={`Button ${connected ? "Active" : "Disabled"}`}
             onClick={() => {

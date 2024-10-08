@@ -4,7 +4,6 @@ export const Card = styled.div`
   padding: 6px 19px;
   border-radius: 8px;
   background-color: white;
-
   @media (prefers-color-scheme: dark) {
     background-color: #111;
   }
@@ -19,7 +18,7 @@ export const FlexBoxRow = styled.div`
 
 export const FlexBoxCol = styled.div`
   display: flex;
-  flex-drection: column;
+  flex-direction: column;
   gap: 10px;
 `;
 

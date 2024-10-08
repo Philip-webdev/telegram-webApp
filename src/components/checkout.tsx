@@ -1,4 +1,5 @@
 import "../App.css";
+import '../index.css';
 import { TonConnectButton } from "@tonconnect/ui-react";
 import { Counter } from "./Counter";
 import { Jetton } from "./Jetton";
@@ -16,6 +17,7 @@ const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
    position: fixed;
+   font-family:'Lexend';
 
   @media (prefers-color-scheme: dark) {
     background-color: #222;
@@ -34,7 +36,7 @@ function checkout() {
   const { network } = useTonConnect();
 
   return (
-    <StyledApp>
+    <StyledApp >
       <AppContainer>
         <FlexBoxCol>
           <FlexBoxRow>
