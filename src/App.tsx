@@ -15,8 +15,9 @@ const Home = home;
 const avatar = myProfile;
 const Checkout = checkout;
 const StyledApp = styled.div`
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
+  border-radius: 7px;
 
   @media (prefers-color-scheme: dark) {
     background-color: rgb(29, 40, 58);
