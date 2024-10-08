@@ -15,7 +15,7 @@ const Home = home;
 const avatar = myProfile;
 const Checkout = checkout;
 const StyledApp = styled.div`
-  background-color: #e8e8e8;
+  background-color: white;
   color: black;
 
   @media (prefers-color-scheme: dark) {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  padding: 6px 19px;
+  padding: 6px 17px;
   border-radius: 8px;
   background-color: white;
   @media (prefers-color-scheme: dark) {

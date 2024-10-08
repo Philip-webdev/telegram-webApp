@@ -5,3 +5,7 @@
 div, section{
   font-family: 'Lexend', sans-serif;
 }
+
+#navs :hover{
+  background-color: 'rgb(46, 172, 219)';
+}
