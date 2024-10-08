@@ -19,7 +19,7 @@ export const FlexBoxRow = styled.div`
 
 export const FlexBoxCol = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-drection: column;
   gap: 10px;
 `;
 
