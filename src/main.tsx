@@ -11,7 +11,7 @@ import  './manifest.json';
 // this manifest is used temporarily for development purposes
 const manifestUrl =
   "https://raw.githubusercontent.com/ton-community/tutorials/main/03-client/test/public/tonconnect-manifest.json";
- const newurl =  'https://github.com/Philip-webdev/telegram-webApp/blob/main/manifest.json'
+ const newurl =  'https://raw.githubusercontent.com/Philip-webdev/telegram-webApp/refs/heads/main/src/manifest.json'
 const queryClient = new QueryClient({
   defaultOptions: { queries: { refetchOnWindowFocus: false } },
 });
