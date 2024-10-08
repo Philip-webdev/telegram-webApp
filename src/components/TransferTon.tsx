@@ -33,9 +33,9 @@ export function TransferTon() {
             onChange={(e) => setTonRecipient(e.target.value)}
           ></Input>
         </FlexBoxRow>
-        <Button
+        <Button 
           disabled={!connected}
-          style={{ marginTop: 18 }}
+          style={{ marginTop: 18, width:'40%' }}
           onClick={async () => {
             sender.send({
               to: Address.parse(tonRecipient),
