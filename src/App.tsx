@@ -17,7 +17,7 @@ const Checkout = checkout;
 const StyledApp = styled.div`
   background-color: whitesmoke;
   color: black;
-  border-radius: 7px;
+  border-radius: 17px;
 
   @media (prefers-color-scheme: dark) {
     background-color: rgb(29, 40, 58);
