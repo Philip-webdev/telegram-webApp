@@ -10,6 +10,7 @@ import { Button, FlexBoxCol, FlexBoxRow } from "./components/styled/styled";
 import "@twa-dev/sdk";
 import checkout from "./components/checkout";
 import miner from "./components/miner";
+import favourites from "./components/fav";
 
 const Home = home;
 const avatar = myProfile;
@@ -40,6 +41,7 @@ function App() {
     <Route path="/profile" Component={myProfile}/>
     <Route path="/Checkout" Component={checkout}/>
     <Route path="/task" Component={miner}/>
+    <Route path="/fav" Component={favourites}/>
     </Routes>
   </HashRouter>
     <StyledApp> 
