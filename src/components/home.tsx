@@ -159,11 +159,11 @@ return(
     < section style={{display:'flex', zoom:'330%'}}>
 <div className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/> 
-    <caption onClick={saveProduct1} id='one' style={{zoom:'15%', color:'black', marginLeft:'4px', cursor:'pointer'}}>pear</caption>
+    <caption onClick={saveProduct1} id='one' style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
 <div style={{display:'flex',zoom:'45%', justifyContent:'space-evenly'}}><BsHeart style={{zoom:'50%', color:'black', margin:'1px'}}/> <BsPlus style={{zoom:'50%', margin:'1px',color:'black'}}/></div></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src='   https://ouch-cdn2.icons8.com/9J-tqJWz53hWH0mo75-dhyg9cVrv3rNPoUfGLFVaw_k/rs:fit:368:143/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTQv/NDBlNGFkMjYtOTA2/ZS00MWM1LTllNjQt/OTk0Y2UzMWJkNjM1/LnN2Zw.png'/>
-    <caption onClick={saveProduct2} id='one' style={{zoom:'15%', color:'black', marginLeft:'4px', cursor:'pointer'}}>pear</caption>
+    <caption onClick={saveProduct2} id='one' style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
     <div style={{display:'flex',zoom:'45%', justifyContent:'space-evenly'}}><BsHeart style={{zoom:'50%', color:'black', margin:'1px'}}/> <BsPlus style={{zoom:'50%', margin:'1px',color:'black'}}/></div></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/ET5TgmBkf_yeuGltz9l7yp01wtX9aJMD-Nh8zz4UphY/rs:fit:368:320/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzQ4/L2RkNzk5ZTczLWJj/YTEtNDBlMC04NmNj/LTU4Nzk5NzVkYjdl/YS5wbmc.png'/>
@@ -173,28 +173,28 @@ return(
 
 <section style={{display:'flex',zoom:'330%'}}><div className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/5cIK3aleg5XZUrrfkNJOBKzFMYxtpOXeo181NvzVob8/rs:fit:368:442/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzY0/L2I1MDhhMDU0LTU3/ZWItNDJhYS1iY2Iz/LWVkYWU2OTRmOGU5/ZC5wbmc.png'/>
-    <caption onClick={saveProduct4} id='one' style={{zoom:'15%', color:'black', marginLeft:'4px', cursor:'pointer'}}>pear</caption>
+    <caption onClick={saveProduct4} id='one' style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
     <div style={{display:'flex', zoom:'50%', justifyContent:'space-evenly'}}><BsHeart style={{zoom:'50%', color:'black', margin:'1px'}}/> <BsPlus style={{zoom:'50%', margin:'1px',color:'black'}}/></div></div>
 <div className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}><img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
-<caption onClick={saveProduct5} id='one' style={{zoom:'15%', color:'black', marginLeft:'4px', cursor:'pointer'}}>pear</caption>
+<caption onClick={saveProduct5} id='one' style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
 <div style={{display:'flex',zoom:'45%', justifyContent:'space-evenly'}}><BsHeart style={{zoom:'50%', color:'black', margin:'1px'}}/> <BsPlus style={{zoom:'50%', margin:'1px',color:'black'}}/></div></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4w-wbnJaspImr0-rImGetVrt_UGrTVPKkYj_GdWx6VU/rs:fit:368:484/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTUz/LzM4MmFlMGRhLTlj/OGYtNDcwNy1iZDAz/LWQyOTJlZDc3M2Yw/NC5wbmc.png'/>
-    <caption onClick={saveProduct6} id='one' style={{zoom:'15%', color:'black', marginLeft:'4px', cursor:'pointer'}}>pear</caption>
+    <caption onClick={saveProduct6} id='one' style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
     <div style={{display:'flex',zoom:'45%', justifyContent:'space-evenly'}}><BsHeart style={{zoom:'50%', color:'black', margin:'1px'}}/> <BsPlus style={{zoom:'50%', margin:'1px',color:'black'}}/></div></div>
 </section>
 <section style={{display:'flex', zoom:'330%'}}>
 <div className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
-    <caption onClick={saveProduct7} id='one' style={{zoom:'15%', color:'black', marginLeft:'4px', cursor:'pointer'}}>pear</caption>
+    <caption onClick={saveProduct7} id='one' style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
  <div style={{display:'flex', zoom:'50%', justifyContent:'space-evenly'}}><BsHeart style={{zoom:'50%', color:'black', margin:'1px'}}/> <BsPlus style={{zoom:'50%', margin:'1px',color:'black'}}/></div></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src='   https://ouch-cdn2.icons8.com/9J-tqJWz53hWH0mo75-dhyg9cVrv3rNPoUfGLFVaw_k/rs:fit:368:143/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTQv/NDBlNGFkMjYtOTA2/ZS00MWM1LTllNjQt/OTk0Y2UzMWJkNjM1/LnN2Zw.png'/>
-    <caption onClick={saveProduct8} id='one' style={{zoom:'15%',  color:'black', marginLeft:'4px', cursor:'pointer'}}>pear</caption>
+    <caption onClick={saveProduct8} id='one' style={{zoom:'15%',  color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
 <div style={{display:'flex',zoom:'45%', justifyContent:'space-evenly'}}><BsHeart style={{zoom:'50%', color:'black', margin:'1px'}}/> <BsPlus style={{zoom:'50%', margin:'1px',color:'black'}}/></div></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/ET5TgmBkf_yeuGltz9l7yp01wtX9aJMD-Nh8zz4UphY/rs:fit:368:320/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzQ4/L2RkNzk5ZTczLWJj/YTEtNDBlMC04NmNj/LTU4Nzk5NzVkYjdl/YS5wbmc.png'/>
-    <caption onClick={saveProduct9} id='one' style={{zoom:'15%', color:'black', marginLeft:'4px', cursor:'pointer'}}>pear</caption>
+    <caption onClick={saveProduct9} id='one' style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
 <div style={{display:'flex',zoom:'45%', justifyContent:'space-evenly'}}><BsHeart style={{zoom:'50%', color:'black', margin:'1px'}}/> <BsPlus style={{zoom:'50%', margin:'1px',color:'black'}}/></div></div>
 </section>
 
