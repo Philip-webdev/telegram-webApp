@@ -1,11 +1,18 @@
 function favourites(){
 
-    if (('localStorage' in window) && window['localStorage'] !== null) 
+    const receiveSelectedProducts = ()=>
         {
-        
-        //localStorage.setItem("Index 1", );
-       // localStorage.setItem('Index 2', nameEntered);
-      // localStorage.setItem('Index 3', nameEntered);
+        if(localStorage != null){
+        //localStorage.getItem( "product 1" );
+       // localStorage.getItem('product 2');
+      // localStorage.getItem('product 3');
+       // localStorage.getItem('product 4');
+        // localStorage.getItem('product 5');
+         // localStorage.getItem('product 6');
+          // localStorage.getItem('product 7');
+           // localStorage.getItem('product 8');
+            // localStorage.getItem('product 9');
+        }
         }
         
     return(
