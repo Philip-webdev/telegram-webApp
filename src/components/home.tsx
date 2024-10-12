@@ -70,9 +70,7 @@ const saveProduct1 = ()=>{
         }
     }
 
-   const  removeproduct = ()=>{
-        localStorage.removeItem('product 1');
-    }
+  
     const saveProduct2 = ()=>{
        
             if(product2  !=null && product2 != undefined){
@@ -155,7 +153,7 @@ return(
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'10px'}}>
     < section style={{display:'flex', zoom:'330%'}}>
-<div onClick={saveProduct1} onDoubleClick={removeproduct} className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
+<div onClick={saveProduct1}  className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
 <caption  id='one'  style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
 <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
 
@@ -263,8 +261,8 @@ return(
             <BsHeart/>  <p style={{zoom:'80%'}}>favs</p> </Button></a>
             <a href='#/Checkout' style={{color:'black', textDecoration:'none'}}> <Button  style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'30px', background:'none', color:"black"}}><BsFillWalletFill/>
             <p style={{zoom:'80%'}}>wallet</p></Button></a>
-              <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'27px', background:'none', color:"black"}}><BsCart3/>
-              <p style={{zoom:'80%'}}>orders</p></Button> <a href='#/task' style={{color:'black', textDecoration:'none'}}><Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"black"}}><FaGamepad/>
+            <a href='#/orders' style={{color:'black', textDecoration:'none'}}>  <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'27px', background:'none', color:"black"}}><BsCart3/>
+              <p style={{zoom:'80%'}}>orders</p></Button></a> <a href='#/task' style={{color:'black', textDecoration:'none'}}><Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"black"}}><FaGamepad/>
               <p style={{zoom:'80%'}}>Games</p> </Button></a>
             </div>
 </div>

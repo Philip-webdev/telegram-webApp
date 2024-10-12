@@ -2,7 +2,7 @@ import "./App.css";
 import "./index.css";
 import { BsCalendar2, BsCalendarPlus, BsFillWalletFill, BsHeart, BsMinecart, BsStack, BsStackOverflow, BsStarFill, BsStars, BsWallet, BsWallet2, BsWalletFill} from 'react-icons/bs';
 import home  from './components/home';
-import mall from './components/mall';
+import mall from './components/order';
 import myProfile from './components/avatar';
 import { HashRouter, Route, Routes} from "react-router-dom";
 import styled from "styled-components";
@@ -11,6 +11,7 @@ import "@twa-dev/sdk";
 import checkout from "./components/checkout";
 import miner from "./components/miner";
 import favourites from "./components/fav";
+import order from "./components/order";
 
 const Home = home;
 const avatar = myProfile;
@@ -42,6 +43,7 @@ function App() {
     <Route path="/Checkout" Component={checkout}/>
     <Route path="/task" Component={miner}/>
     <Route path="/fav" Component={favourites}/>
+    <Route path="/orders" Component={order}/>
     </Routes>
   </HashRouter>
     <StyledApp> 

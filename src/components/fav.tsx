@@ -1,5 +1,6 @@
+import { useEffect } from "react";
 import styled from "styled-components";
-import { loadConfigFromFile } from "vite";
+
 function favourites(){
     const StyledApp = styled.div`
     background-color: whitesmoke;
@@ -29,17 +30,30 @@ function favourites(){
         
 const ProductsArray = [product1, product2, product3, product4, product5, product6, product7, product8];
 
- const Load =()=>{ ProductsArray.map((products) =>{ 
-  const ajaxElement = document.createElement('li');
-ajaxElement.textContent = products;
-  const ajaxContainer  = document.getElementById('containerr');
 
-ajaxContainer?.appendChild(ajaxElement);
-});}
-  
+
+function removeproduct() {
+  localStorage.removeItem('product 1');
+  localStorage.removeItem('product 2');
+  localStorage.removeItem('product 3');
+  localStorage.removeItem('product 4');
+  localStorage.removeItem('product 5');
+  localStorage.removeItem('product 6');
+  localStorage.removeItem('product 7');
+  localStorage.removeItem('product 8');
+  localStorage.removeItem('product 9');
+
+   const visibility = {noView: 'none'}
+ var divdisplay = document.getElementById('containerr');
+if (divdisplay != null){
+ divdisplay.style.display = visibility.noView;
+}
+}
+//useEffect(()=>removeproduct());
+
     return(
         <div style={{ width: '100%'}}>
-<StyledApp onLoad={Load} style={{width:'100%'}}>
+<StyledApp  style={{width:'100%'}}>
 <h2> Your spotlights</h2>
 <ul id="containerr" style={{
   listStyle:'none'
@@ -55,7 +69,7 @@ ajaxContainer?.appendChild(ajaxElement);
   <li>{product9}</li>
 
 </ul>
-
+<button onClick={removeproduct}>Remove all</button>
 </StyledApp>
         </div>
     );
