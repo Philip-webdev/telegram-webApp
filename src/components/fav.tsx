@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 function favourites(){
@@ -17,7 +17,62 @@ function favourites(){
     padding: 20px 20px;
   `;
     
-     
+
+  // Replace with your actual bot token
+  const BOT_TOKEN = '7224317370:AAHNjnqB1gf3d74o2dVAPYSWkwfLQ_CiEnw';
+  
+  const storage = () => {
+   
+      // Function to save data to Telegram Cloud Storage
+      const saveToCloudStorage = async (key: string, value: string) => {
+          try {
+              const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/setChatData`, {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({
+                      product_Id: 'banana',
+                      price: '200$'
+                      }
+                  ),
+                });
+                const data = await response.json();
+                console.log('Save response:', data);
+          } 
+          catch (error) {
+              console.error('Error saving to cloud storage:', error);
+          }
+      };
+  
+      // Function to load data from Telegram Cloud Storage
+      const loadFromCloudStorage = async (data: string) => {
+          try {
+              const response = await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/getChatData`, {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({
+                      product_Id:'banana',
+                      price:'300$'
+                  }),
+              });
+              const data = await response.json();
+              return data.result || null; // Return the value or null if not found
+          } catch (error) {
+              console.error('Error loading from cloud storage:', error);
+          }
+      };
+  
+
+          // Example usage
+          saveToCloudStorage('productName', 'banana');
+          loadFromCloudStorage('productName').then((productName) => {
+              console.log('Loaded productName:', productName); // Should log 'John Doe'
+          });
+      }
+  
         var product1 = localStorage.getItem( "product 1" );
        var product2 = localStorage.getItem('product 2');
       var product3 = localStorage.getItem('product 3');
@@ -49,8 +104,13 @@ if (divdisplay != null){
  divdisplay.style.display = visibility.noView;
 }
 }
-//useEffect(()=>removeproduct());
-
+const [data, setData] =useState(null)
+const doings = ()=>{
+fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly') 
+            .then(response => response.json())
+            .then(data => console.log(data.message))
+            .catch(error => console.error('Error fetching data:', error))
+}
     return(
         <div style={{ width: '100%'}}>
 <StyledApp  style={{width:'100%'}}>
@@ -69,7 +129,7 @@ if (divdisplay != null){
   <li>{product9}</li>
 
 </ul>
-<button onClick={removeproduct}>Remove all</button>
+<button  onClick={doings}>get all</button>
 </StyledApp>
         </div>
     );
