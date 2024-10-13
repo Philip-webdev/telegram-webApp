@@ -121,7 +121,7 @@ const saveProduct1 = ()=>{
             
         }
         else{
-            console.log('error');
+            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_1);
         }
     }
 
