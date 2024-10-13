@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import styled from "styled-components";
 
 function favourites(){
@@ -32,7 +32,7 @@ function favourites(){
             var product8 = localStorage.getItem('product 8');
          var product9 = localStorage.getItem('product 9');
         
-const ProductsArray = [product1, product2, product3, product4, product5, product6, product7, product8];
+//onst ProductsArray = [product1, product2, product3, product4, product5, product6, product7, product8];
 
 
 
@@ -53,16 +53,16 @@ if (divdisplay != null){
  divdisplay.style.display = visibility.noView;
 }
 }
-const [data, setData] =useState(null)
+
 const doings = ()=>{
 fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly') 
             .then(
                 async (response)=>{
                const result = response.json();
               const parsedResult = JSON.parse(await result);
-              for (let i = 0; i <=8; i++){
+           //   for (let i = 0; i <=8; i++){
               console.log(parsedResult.rawData[i]);
-              }
+            //  }
               //console.log(parsedResult.price)
             })
            // .then(data => JSON.parse(data))
