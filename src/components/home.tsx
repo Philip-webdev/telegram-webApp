@@ -1,6 +1,7 @@
 
 import 'react-icons/bs';
 import '../index.css';
+import axios from 'axios';
 import 'react-icons/fa';
 import { Button } from "./styled/styled";
 import './avatar';
@@ -116,7 +117,7 @@ const product_data_9 = {
 const saveProduct1 = ()=>{
   
             if(product1  !=null && product1 != undefined){
-                fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_1);
+                axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_1);
             
         }
         else{
@@ -128,7 +129,7 @@ const saveProduct1 = ()=>{
     const saveProduct2 = ()=>{
        
             if(product2  !=null && product2 != undefined){
-                fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_2);
+                axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_2);
         
     }
 }
@@ -136,21 +137,21 @@ const saveProduct1 = ()=>{
 const saveProduct3 = ()=>{
   
         if(product3  !=null && product3 != undefined){
-            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_3);
+            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_3);
         
     }
 }
 const saveProduct4 = ()=>{
    
         if(product4 !=null && product4 != undefined){
-            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_4);
+            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_4);
         
     }
 }
 const saveProduct5 = ()=>{
    
         if(product5  !=null && product5 != undefined){
-            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_5);
+            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_5);
         
 
     }
@@ -158,7 +159,7 @@ const saveProduct5 = ()=>{
 const saveProduct6 = ()=>{
   
         if(product6  !=null && product6 != undefined){
-            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_6);
+            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_6);
         
     }
 }
@@ -166,14 +167,14 @@ const saveProduct6 = ()=>{
 const saveProduct7 = ()=>{
    
         if(product7  !=null && product7 != undefined){
-            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_7);
+            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_7);
         }
     
 }
 const saveProduct8 = ()=>{
    
         if(product8  !=null && product8 != undefined){
-            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_8);
+            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_8);
         }
 
     
@@ -181,7 +182,7 @@ const saveProduct8 = ()=>{
 const saveProduct9 = ()=>{
     
         if(product9  !=null && product9 != undefined){
-            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_9);
+            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_9);
                 }
             
         }
