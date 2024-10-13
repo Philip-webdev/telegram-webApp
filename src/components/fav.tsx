@@ -61,7 +61,7 @@ fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly')
                const result = response.json();
               const parsedResult = JSON.parse(await result);
            //   for (let i = 0; i <=8; i++){
-              console.log(parsedResult.rawData[i]);
+              console.log(parsedResult.rawData);
             //  }
               //console.log(parsedResult.price)
             })
