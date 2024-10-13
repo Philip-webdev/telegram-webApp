@@ -58,11 +58,65 @@ const food = ()=> {
                 const product7 =   document.getElementById('prod_seven')?.innerText;
                 const product8 =   document.getElementById('prod_eight')?.innerText;
                 const product9 =   document.getElementById('prod_nine')?.innerText;
-//const productsArray = {product1: document.getElementById('')?.innerText, product2, product3, product4, product5, product8, product9};
+
+
+ const product_data_1 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product1})
+};
+
+const product_data_2 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product2})
+};
+
+const product_data_3 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product3})
+};
+
+const product_data_4 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product4})
+};
+
+const product_data_5 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product5})
+};
+
+const product_data_6 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product6})
+};
+
+const product_data_7 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product7})
+};
+
+const product_data_8 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product8})
+};
+
+const product_data_9 = {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({product9})
+};
 const saveProduct1 = ()=>{
   
             if(product1  !=null && product1 != undefined){
-                    localStorage.setItem('product 1', product1);
+                fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_1);
             
         }
         else{
@@ -74,7 +128,7 @@ const saveProduct1 = ()=>{
     const saveProduct2 = ()=>{
        
             if(product2  !=null && product2 != undefined){
-                    localStorage.setItem('product 2', product2)
+                fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_2);
         
     }
 }
@@ -82,21 +136,21 @@ const saveProduct1 = ()=>{
 const saveProduct3 = ()=>{
   
         if(product3  !=null && product3 != undefined){
-                    localStorage.setItem('product 3', product3)
+            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_3);
         
     }
 }
 const saveProduct4 = ()=>{
    
         if(product4 !=null && product4 != undefined){
-                    localStorage.setItem('product 4', product4)
+            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_4);
         
     }
 }
 const saveProduct5 = ()=>{
    
         if(product5  !=null && product5 != undefined){
-                    localStorage.setItem('product 5', product5)
+            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_5);
         
 
     }
@@ -104,7 +158,7 @@ const saveProduct5 = ()=>{
 const saveProduct6 = ()=>{
   
         if(product6  !=null && product6 != undefined){
-                    localStorage.setItem('product 6', product6)
+            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_6);
         
     }
 }
@@ -112,14 +166,14 @@ const saveProduct6 = ()=>{
 const saveProduct7 = ()=>{
    
         if(product7  !=null && product7 != undefined){
-                    localStorage.setItem('product 7', product7)
+            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_7);
         }
     
 }
 const saveProduct8 = ()=>{
    
         if(product8  !=null && product8 != undefined){
-                    localStorage.setItem('product 8', product8)
+            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_8);
         }
 
     
@@ -127,7 +181,7 @@ const saveProduct8 = ()=>{
 const saveProduct9 = ()=>{
     
         if(product9  !=null && product9 != undefined){
-                    localStorage.setItem('product 9', product9)
+            fetch('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_9);
                 }
             
         }
