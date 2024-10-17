@@ -233,12 +233,11 @@ return(
 <img src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid' height='300px' width='300px'/>
 <img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
         </div>
-    </div>
-</div>
-<section id='wrapper'  style={{display:'flex', overflow:'hidden', width:styles.width, color:'white', marginLeft:'1%' , height:'500px'}}>
+    </div></div>
+<section id='wrapper'  style={{display:'inline', overflow:'hidden', width:styles.width, color:'white', marginLeft:'1%' , height:'500px'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'10px'}}>
-    < section style={{display:'flex', zoom:'330%'}}>
+    < section style={{display:'inline', zoom:'330%'}}>
 <div onClick={saveProduct1}  className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
 <caption  id='one'  style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
 <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
@@ -254,7 +253,7 @@ return(
    </div></section>
     
 
-<section style={{display:'flex',zoom:'330%'}}><div onClick={saveProduct4} id='prod_four' className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
+<section style={{display:'inline',zoom:'330%'}}><div onClick={saveProduct4} id='prod_four' className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
 <caption  style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
 
   <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/5cIK3aleg5XZUrrfkNJOBKzFMYxtpOXeo181NvzVob8/rs:fit:368:442/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzY0/L2I1MDhhMDU0LTU3/ZWItNDJhYS1iY2Iz/LWVkYWU2OTRmOGU5/ZC5wbmc.png'/>
@@ -269,7 +268,7 @@ return(
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4w-wbnJaspImr0-rImGetVrt_UGrTVPKkYj_GdWx6VU/rs:fit:368:484/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTUz/LzM4MmFlMGRhLTlj/OGYtNDcwNy1iZDAz/LWQyOTJlZDc3M2Yw/NC5wbmc.png'/>
    </div>
 </section>
-<section style={{display:'flex', zoom:'330%'}}>
+<section style={{display:'inline', zoom:'330%'}}>
 <div onClick={saveProduct7} id='prod_seven' className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
 <caption  style={{zoom:'15%', color:'black', marginLeft:'27px', cursor:'pointer'}}>pear</caption>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
@@ -284,7 +283,7 @@ return(
   </div>
 </section>
 
-<section style={{display:'flex', zoom:'330%'}}>
+<section style={{display:'inline', zoom:'330%'}}>
 <div className="items" style={{borderRadius:'5px',margin:'6px', height: '20px', width: '20px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
     <div style={{display:'flex',zoom:'45%', justifyContent:'space-evenly'}}>
@@ -306,16 +305,16 @@ return(
     
   
     <div className="section_fruit" style={{display:'inline', justifyContent:'space-around', height:'300px', margin:'10px'}}>
-    <section style={{display:'flex', zoom:'330%'}}><div className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
+    <section style={{display:'inline', zoom:'330%'}}><div className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
 <div className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: 'blue'}}></div></section>
-<section style={{display:'flex', zoom:'330%'}}>
+<section style={{display:'inline', zoom:'330%'}}>
 <div className="items" style={{borderRadius:'5px',margin:'6px',  height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
 </section>
     
-<section style={{display:'flex', zoom:'330%'}}>
+<section style={{display:'inline', zoom:'330%'}}>
 <div className="items" style={{borderRadius:'5px',margin:'6px', height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
 <div className="items" style={{borderRadius:'5px', margin:'6px', height: '20px', width: '20px', backgroundColor: 'blue'}}></div>
