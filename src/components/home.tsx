@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 import 'react-icons/bs';
 import '../index.css';
 import axios from 'axios';
@@ -43,7 +43,12 @@ const food = ()=> {
     //const frens = 'name';
 
       //  const name = document.getElementById('name')?.innerText
-      //  const [fren, setFren] = useState(frens);
+        const [fren, setFren] = useState('');
+        const onSubmitPersonalData = async ()=>{
+            const name =  await axios.get('https://twa-backend-g83o.onrender.com/telegram-webApp/profile');
+        
+            setFren(name.data)
+        }
 
       // i need to set   a listner fr ckicks on each products. 
       // it actually does the action of storing on local storage. 
@@ -186,14 +191,29 @@ const saveProduct9 = ()=>{
                 }
             
         }
+        const slideContents = document.getElementById('slideContainer');
+        const slideContainer = document.getElementById('slideContents');
+        var currentIndex = 0;
+           const slide = ()=>{
            
-           
+            function changeSlide(){
+               
+                const slidex = ['1', '2','3', '4'];
+                currentIndex = (currentIndex + 1) % slidex.length;
+                if (slideContents != null){
+                slideContents.style.transform = 'translateX(' + (currentIndex * 200) + 'px)';
+                console.log('into the badlands');
+                }
+            }
+            setInterval(changeSlide, 2000);
+           }
+        
    
        
 return(
-<div>
+<div >
     <div className="header" style={{display:'flex', justifyContent:'space-between', zoom:'110%'}}>
-        <div>Hi, fren</div><div style={{marginRight:'17px'}}>GroTon</div><div style={{borderRadius:'100%', borderColor:'blue'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
+        <div>Hi,{fren}</div><div style={{marginRight:'17px'}}>GroTon</div><div style={{borderRadius:'100%', borderColor:'blue'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
         </div>
 
     
@@ -201,9 +221,17 @@ return(
 
     <br></br><br></br>
     <div id='navs' style={{ fontFamily: 'Lexend' , zoom:'80%'}}><button style={{display:'inline', fontFamily: 'Lexend' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'2px solid black', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice/> </button>
-    <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={fruits}>Fruits  <FaAppleAlt/> </button>
+    <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}}  onClick={fruits}>Fruits  <FaAppleAlt/> </button>
     <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
-
+<div>
+    <div onMouseOver={slide} id='slideContainer' style={{width:'300px', height:'300px', overflow:'hidden', border:'1px solid black'}}>
+        <div id='slideContents' style={{height:'100%', width:'100%', display:'flex', transition:'1s ease'}}>
+<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
+<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
+<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
+        </div>
+    </div>
+</div>
 <section id='wrapper'  style={{display:'flex', overflow:'hidden', width:styles.width, color:'white', marginLeft:'1%' , height:'500px'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'10px'}}>
