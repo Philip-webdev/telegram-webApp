@@ -61,6 +61,10 @@ const StyledApp = styled.div`
  const dblclicks = ()=>{
   setShowAvatars(false);
  }
+
+ const handleClick = (event: { preventDefault: () => void; })=>{
+  event.preventDefault();
+ }
  
 return(
     
@@ -69,7 +73,7 @@ return(
        </div>
        <div><h1>Your profile</h1>
       <form action="/telegram-webApp/profile" method='POST'> <p id="name">your name <input defaultValue='' name='name' type="text" placeholder="fren" style={{borderBottomColor:' white',border:'none', background:'none', borderRadius:'5px'}}/></p>
-      <button type="submit">mem</button></form></div>
+      <button onClick={handleClick} type="submit">mem</button></form></div>
 
        <button onClick={changeAvatar} onDoubleClick={dblclicks}>Show Avatars</button><br></br>
       {showAvatars && (
