@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import 'react-icons/bs';
 import '../index.css';
 import axios from 'axios';
@@ -191,23 +191,26 @@ const saveProduct9 = ()=>{
                 }
             
         }
-        const slideContents = document.getElementById('slideContainer');
-        const slideContainer = document.getElementById('slideContents');
-        var currentIndex = 0;
+
+        
+      
            const slide = ()=>{
-           
+            const slideContents = document.getElementById('slideContents');
+            const slideContainer = document.getElementById('slideContainer');
+            var currentIndex = 0;
             function changeSlide(){
                
                 const slidex = ['1', '2','3', '4'];
                 currentIndex = (currentIndex + 1) % slidex.length;
                 if (slideContents != null){
-                slideContents.style.transform = 'translateX(' + (currentIndex * 200) + 'px)';
-                console.log('into the badlands');
+                slideContents.style.transform = 'translateX(' + (currentIndex * -300) + 'px)';
+                
                 }
             }
             setInterval(changeSlide, 2000);
            }
-        
+        useEffect(()=>{
+            slide();} ,[])
    
        
 return(
@@ -224,10 +227,10 @@ return(
     <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}}  onClick={fruits}>Fruits  <FaAppleAlt/> </button>
     <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
 <div>
-    <div onMouseOver={slide} id='slideContainer' style={{width:'300px', height:'300px', overflow:'hidden', border:'1px solid black'}}>
+    <div  id='slideContainer' style={{marginLeft:'7px' ,width:'300px', height:'200px', overflow:'hidden', border:'1px solid black'}}>
         <div id='slideContents' style={{height:'100%', width:'100%', display:'flex', transition:'1s ease'}}>
 <img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
-<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
+<img src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid' height='300px' width='300px'/>
 <img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
         </div>
     </div>
