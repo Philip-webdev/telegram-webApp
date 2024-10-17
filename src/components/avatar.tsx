@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useState } from "react";
 import 'react-icons/bs';
 import { BsArrowBarLeft, BsArrowLeftCircle } from "react-icons/bs";
@@ -61,9 +62,9 @@ const StyledApp = styled.div`
  const dblclicks = ()=>{
   setShowAvatars(false);
  }
-
+const name = document.getElementById('myname')?.innerText
  const handleClick = (event: { preventDefault: () => void; })=>{
-  event.preventDefault();
+  axios.post('https://twa-backend-g83o.onrender.com', name)
  }
  
 return(
@@ -72,8 +73,8 @@ return(
        <StyledApp style={{ width: '100%'}}> <a href="#/home" style={{color:'black', textDecoration:'none'}}><BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:"150%"}}/></a><div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', borderColor:'rgb(46, 172, 219)', borderRadius:'100%', width:'fit-content'}}>{avatar}</p>
        </div>
        <div><h1>Your profile</h1>
-      <form action="/telegram-webApp/profile" method='POST'> <p id="name">your name <input defaultValue='' name='name' type="text" placeholder="fren" style={{borderBottomColor:' white',border:'none', background:'none', borderRadius:'5px'}}/></p>
-      <button onClick={handleClick} type="submit">mem</button></form></div>
+      <p id="name">your name <input id="myname" defaultValue='' name='name' type="text" placeholder="fren" style={{borderBottomColor:' white',border:'none', background:'none', borderRadius:'5px'}}/></p>
+      <button onClick={handleClick} type="submit">mem</button></div>
 
        <button onClick={changeAvatar} onDoubleClick={dblclicks}>Show Avatars</button><br></br>
       {showAvatars && (

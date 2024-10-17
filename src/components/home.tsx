@@ -45,7 +45,7 @@ const food = ()=> {
       //  const name = document.getElementById('name')?.innerText
         const [fren, setFren] = useState('');
         const onSubmitPersonalData = async ()=>{
-            const name =  await axios.get('https://twa-backend-g83o.onrender.com/telegram-webApp/profile');
+            const name =  await axios.get('https://twa-backend-g83o.onrender.com/profile');
         
             setFren(name.data)
         }
