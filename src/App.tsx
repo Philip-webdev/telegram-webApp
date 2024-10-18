@@ -39,7 +39,8 @@ function App() {
   return (
     <div >
    
-      <HashRouter>
+  <StyledApp>
+    <HashRouter>
     <Routes>
     <Route path="/" Component={home}/>
     <Route path="/profile" Component={myProfile}/>
@@ -49,7 +50,7 @@ function App() {
     <Route path="/orders" Component={order}/>
     </Routes>
   </HashRouter>
-  
+  </StyledApp>
     </div>
   );
 }
