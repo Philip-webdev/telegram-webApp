@@ -63,9 +63,9 @@ axios.get('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly')
             .then(
                 async (response)=>{
                const result = response.json();
-              const parsedResult = JSON.parse(await result);
+             // const parsedResult = JSON.parse(await result);
            //   for (let i = 0; i <=8; i++){
-              console.log(parsedResult);
+              console.log(result);
             //  }
               //console.log(parsedResult)
             })
