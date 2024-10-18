@@ -64,7 +64,7 @@ const food = ()=> {
      //const name = document.getElementById('name')?.nodeValue
         const [fren, setFren] = useState('');
         const onSubmitPersonalData = async ()=>{
-            const name =  await axios.get('https://twa-backend-g83o.onrender.com/profile');
+            const name =  await axios.get('https://twa-backend-g83o.onrender.com/profiler');
         
             setFren(name.data)
         }

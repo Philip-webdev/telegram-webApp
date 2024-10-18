@@ -68,7 +68,7 @@ const StyledApp = styled.div`
  const handleClick = (event: { preventDefault: () => void; })=>{
     const name = document.getElementById('myname')?.nodeValue;
     if(name != undefined){
-  axios.post('https://twa-backend-g83o.onrender.com/profile', {name})
+  axios.post('https://twa-backend-g83o.onrender.com/profiler', {name})
  }}
  
 return(
@@ -77,8 +77,8 @@ return(
        <StyledApp style={{ width: '100%'}}> <a href="#/home" style={{color:'black', textDecoration:'none'}}><BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:"150%"}}/></a><div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', borderColor:'rgb(46, 172, 219)', borderRadius:'100%', width:'fit-content'}}>{avatar}</p>
        </div>
        <div><h1>Your profile</h1>
-      <p id="name" onClick={handleClick}>your name <input id="myname" defaultValue='' name='name' type="text" placeholder="fren" style={{borderBottomColor:' white',border:'none', background:'none', borderRadius:'5px'}}/></p>
-      <button type="submit">mem</button></div>
+      <p id="name" >your name <input id="myname" defaultValue='' name='name' type="text" placeholder="fren" style={{borderBottomColor:' white',border:'none', background:'none', borderRadius:'5px'}}/></p>
+      <button onClick={handleClick} type="submit">mem</button></div>
 
        <button onClick={changeAvatar} onDoubleClick={dblclicks}>Show Avatars</button><br></br>
       {showAvatars && (
