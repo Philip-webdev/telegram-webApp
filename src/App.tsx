@@ -12,6 +12,7 @@ import checkout from "./components/checkout";
 import miner from "./components/miner";
 import favourites from "./components/fav";
 import order from "./components/order";
+import Frontier from "./components/showcaser";
 
 const Home = home;
 const avatar = myProfile;
@@ -39,10 +40,10 @@ function App() {
   return (
     <div >
    
-  <StyledApp>
+  
     <HashRouter>
     <Routes>
-    <Route path="/" Component={home}/>
+    <Route path="/home" Component={home}/>
     <Route path="/profile" Component={myProfile}/>
     <Route path="/Checkout" Component={checkout}/>
     <Route path="/task" Component={miner}/>
@@ -50,6 +51,10 @@ function App() {
     <Route path="/orders" Component={order}/>
     </Routes>
   </HashRouter>
+  <StyledApp>
+
+    <Frontier/>
+ 
   </StyledApp>
     </div>
   );
