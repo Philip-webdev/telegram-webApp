@@ -2,12 +2,30 @@ import { useEffect, useState } from 'react';
 import 'react-icons/bs';
 import '../index.css';
 import axios from 'axios';
+import styled from "styled-components";
 import 'react-icons/fa';
 import { Button } from "./styled/styled";
 import './avatar';
 import {  BsCart3, BsFillWalletFill, BsHeart,  BsPlus} from 'react-icons/bs';
 import { FaAppleAlt,  FaBreadSlice, FaGamepad, FaGift} from 'react-icons/fa';
 
+const StyledApp = styled.div`
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 17px;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: rgb(29, 40, 58);
+    color: white;
+  }
+  min-height: 90vh;
+  padding: 20px 20px;
+`;
+
+const AppContainer = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+`;
 function home(){
 const styles = {width:'350px', maxWidth:'810px'};
  
@@ -210,11 +228,13 @@ const saveProduct9 = ()=>{
             setInterval(changeSlide, 2000);
            }
         useEffect(()=>{
-            slide();} ,[])
-   
+           slide();} ,[])
+
        
 return(
 <div onLoadedData={onSubmitPersonalData}>
+    <StyledApp>
+        <AppContainer>
     <div className="header" style={{display:'flex', justifyContent:'space-between', zoom:'110%'}}>
         <div>Hi,{fren}</div><div style={{marginRight:'17px'}}>GroTon</div><div style={{borderRadius:'100%', borderColor:'blue'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
         </div>
@@ -226,14 +246,14 @@ return(
     <div id='navs' style={{ fontFamily: 'Lexend' , zoom:'80%'}}><button style={{display:'inline', fontFamily: 'Lexend' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'2px solid black', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice/> </button>
     <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}}  onClick={fruits}>Fruits  <FaAppleAlt/> </button>
     <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
-<div>
-    <div  id='slideContainer' style={{marginLeft:'7px' ,width:'320px', height:'170px', overflow:'hidden', border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
+
+    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'7px' ,width:'320px', height:'170px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
         <div id='slideContents' style={{height:'100%', width:'100%', display:'flex', transition:'1s ease'}}>
 <img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='310px'/>
 <img src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid' height='300px' width='320px'/>
 <img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='320px'/>
         </div>
-    </div>
+    
 </div>
 <section id='wrapper'  style={{display:'flex', overflow:'hidden', width:styles.width, color:'white', marginLeft:'1%' , height:'500px'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
@@ -341,7 +361,8 @@ return(
             <a href='#/orders' style={{color:'black', textDecoration:'none'}}>  <Button style={{  fontFamily: 'Lexend' ,bottom:'0%', marginRight:'27px', background:'none', color:"black"}}><BsCart3/>
               <p style={{zoom:'80%'}}>orders</p></Button></a> <a href='#/task' style={{color:'black', textDecoration:'none'}}><Button  style={{ fontFamily: 'Lexend' ,bottom:'0%', background:'none', color:"black"}}><FaGamepad/>
               <p style={{zoom:'80%'}}>Games</p> </Button></a>
-            </div>
+            </div></AppContainer>
+            </StyledApp>     
 </div>
 
 );

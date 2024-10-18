@@ -37,8 +37,11 @@ const AppContainer = styled.div`
 function App() {
  
   return (
-    <div > <HashRouter>
+    <div >
+   
+      <HashRouter>
     <Routes>
+    <Route path="/" Component={home}/>
     <Route path="/profile" Component={myProfile}/>
     <Route path="/Checkout" Component={checkout}/>
     <Route path="/task" Component={miner}/>
@@ -46,13 +49,7 @@ function App() {
     <Route path="/orders" Component={order}/>
     </Routes>
   </HashRouter>
-    <StyledApp> 
-      <AppContainer >
-        <Home/>
-        
-      
-      </AppContainer>
-    </StyledApp>
+  
     </div>
   );
 }
