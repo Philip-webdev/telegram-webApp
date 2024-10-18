@@ -68,7 +68,9 @@ const food = ()=> {
         
             setFren(name.data)
         }
-
+useEffect(()=>{
+    onSubmitPersonalData();
+}, [])
       // i need to set   a listner fr ckicks on each products. 
       // it actually does the action of storing on local storage. 
       //I should be getiing items at the revelant component.
@@ -233,7 +235,7 @@ const saveProduct9 = ()=>{
 
        
 return(
-<div onLoadedData={onSubmitPersonalData}>
+<div >
     <StyledApp>
         <AppContainer>
     <div className="header" style={{display:'flex', justifyContent:'space-between', zoom:'110%'}}>
