@@ -68,9 +68,9 @@ const food = ()=> {
         
             setFren(name.data)
         }
-useEffect(()=>{
-    onSubmitPersonalData();
-}, [])
+//useEffect(()=>{
+   /// onSubmitPersonalData();
+//}, [])
       // i need to set   a listner fr ckicks on each products. 
       // it actually does the action of storing on local storage. 
       //I should be getiing items at the revelant component.
