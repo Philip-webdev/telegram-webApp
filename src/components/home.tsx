@@ -13,6 +13,7 @@ const StyledApp = styled.div`
   background-color: whitesmoke;
   color: black;
   border-radius: 17px;
+  position:fixed;
 
   @media (prefers-color-scheme: dark) {
     background-color: rgb(29, 40, 58);
@@ -247,21 +248,21 @@ return(
     <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}}  onClick={fruits}>Fruits  <FaAppleAlt/> </button>
     <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
 
-    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'7px' ,width:'320px', height:'170px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
+    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'7px' ,width:'300px', height:'150px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
         <div id='slideContents' style={{height:'100%', width:'100%', display:'flex', transition:'1s ease'}}>
-<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='310px'/>
+<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
 <img src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid' height='300px' width='320px'/>
-<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='320px'/>
+<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
         </div>
     
 </div>
-<section id='wrapper'  style={{display:'flex', overflow:'hidden', width:styles.width, color:'white', marginLeft:'1%' , height:'500px'}}>
+<section id='wrapper'  style={{display:'flex', overflow:'hidden', width:styles.width, color:'white', marginLeft:'1%' , height:'900px'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'7px'}}>
     < section style={{display:'inline', zoom:'330%'}}>
 <div onClick={saveProduct1}  className="items" style={{display:'flex',borderRadius:'5px',margin:'6px',  height: '20px', width: '90px', backgroundColor: '#e8e8e8'}}>
 <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
-<caption  id='one'  style={{ color:'black', margin:'10px', cursor:'pointer',marginLeft:'50%'}}>pear</caption>
+<caption  id='one'  style={{zoom:'20%', color:'black', margin:'10px', cursor:'pointer',marginLeft:'50%'}}>pear</caption>
 </div>
 <div  onClick={saveProduct2} id='prod_two'className="items" style={{display:'flex',borderRadius:'5px', margin:'6px', height: '20px', width:'90px', backgroundColor: '#e8e8e8'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src='   https://ouch-cdn2.icons8.com/9J-tqJWz53hWH0mo75-dhyg9cVrv3rNPoUfGLFVaw_k/rs:fit:368:143/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTQv/NDBlNGFkMjYtOTA2/ZS00MWM1LTllNjQt/OTk0Y2UzMWJkNjM1/LnN2Zw.png'/>

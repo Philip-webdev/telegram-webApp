@@ -41,7 +41,7 @@ function checkout() {
       <AppContainer>
         <FlexBoxCol>
           <FlexBoxRow>
-           <a href="#/" style={{color:'black', textDecoration:'none'}}> <BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:'150%'}}/></a>
+           <a href="#/home" style={{color:'black', textDecoration:'none'}}> <BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:'150%'}}/></a>
             <TonConnectButton />
             <Button>
               {network
