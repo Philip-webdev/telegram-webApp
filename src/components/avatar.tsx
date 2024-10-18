@@ -64,10 +64,12 @@ const StyledApp = styled.div`
  const dblclicks = ()=>{
   setShowAvatars(false);
  }
-const name = document.getElementById('myname')?.innerText
+
  const handleClick = (event: { preventDefault: () => void; })=>{
-  axios.post('https://twa-backend-g83o.onrender.com/profile', name)
- }
+    const name = document.getElementById('myname')?.innerText;
+    if(name != undefined){
+  axios.post('https://twa-backend-g83o.onrender.com/profile', {name})
+ }}
  
 return(
     
