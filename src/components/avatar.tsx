@@ -69,7 +69,7 @@ const StyledApp = styled.div`
     const name = document.getElementById('myname')?.nodeValue;
     
     if(name != undefined && null){
-  axios.post('https://twa-backend-g83o.onrender.com/profiler', {name})
+  axios.post('https://twa-backend-g83o.onrender.com/profiler', {name: 'Philip', Email:'@gmail', Phone:'mynum'})
   console.log('here');
  }}
 return(
