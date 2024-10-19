@@ -66,12 +66,13 @@ const StyledApp = styled.div`
  }
 
  const handleClick = (event: { preventDefault: () => void; })=>{
-    const name = document.getElementById('myname')?.nodeValue;
+    //const name = document.getElementById('myname')?.nodeValue;
     
-    if(name != undefined && null){
+   // if(name != undefined && null){
   axios.post('https://twa-backend-g83o.onrender.com/profiler', {name: 'Philip', Email:'@gmail', Phone:'mynum'})
   console.log('here');
- }}
+ }
+ 
 return(
     
     <div style={{ width: '100%'}}>
