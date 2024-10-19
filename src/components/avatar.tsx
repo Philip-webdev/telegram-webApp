@@ -68,7 +68,7 @@ const StyledApp = styled.div`
  const handleClick = (event: { preventDefault: () => void; })=>{
     const name = document.getElementById('myname')?.nodeValue;
     
-    if(name != undefined){
+    if(name != undefined && null){
   axios.post('https://twa-backend-g83o.onrender.com/profiler', {name})
   console.log('here');
  }}
