@@ -244,7 +244,7 @@ return(
         </div>
 
     
-
+;
 
     <br></br><br></br>
     <div id='navs' style={{ fontFamily: 'Lexend' , zoom:'80%'}}><button style={{display:'inline', fontFamily: 'Lexend' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'2px solid black', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice/> </button>
