@@ -61,13 +61,13 @@ const food = ()=> {
     }
     //const frens = 'name';
 
-     //const name = document.getElementById('name')?.nodeValue
+    //const name = document.getElementById('name')?.nodeValue
         const [fren, setFren] = useState('');
         const onSubmitPersonalData = async ()=>{
             const name =  await axios.get('https://twa-backend-g83o.onrender.com/profiler');
         
           setFren(name.data);
-               console.log(name.data)
+               console.log('hi')
         }
 //useEffect(()=>{
    /// onSubmitPersonalData();
@@ -244,7 +244,7 @@ return(
         </div>
 
     
-;
+
 
     <br></br><br></br>
     <div id='navs' style={{ fontFamily: 'Lexend' , zoom:'80%'}}><button style={{display:'inline', fontFamily: 'Lexend' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'2px solid black', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice/> </button>

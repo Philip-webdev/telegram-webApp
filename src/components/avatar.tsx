@@ -65,14 +65,14 @@ const StyledApp = styled.div`
   setShowAvatars(false);
  }
 
- const handleClick = (event: { preventDefault: () => void; })=>{
+ const handleClick = ()=>{
     //const name = document.getElementById('myname')?.nodeValue;
     
    // if(name != undefined && null){
   axios.post('https://twa-backend-g83o.onrender.com/profiler', {name: 'Philip', Email:'@gmail', Phone:'mynum'})
   console.log('here');
  }
- 
+
 return(
     
     <div style={{ width: '100%'}}>
