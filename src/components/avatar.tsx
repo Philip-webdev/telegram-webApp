@@ -72,7 +72,6 @@ const StyledApp = styled.div`
   axios.post('https://twa-backend-g83o.onrender.com/profiler', {name})
   console.log('here');
  }}
- 
 return(
     
     <div style={{ width: '100%'}}>
