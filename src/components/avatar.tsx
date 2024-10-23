@@ -66,12 +66,16 @@ const StyledApp = styled.div`
  }
 
  const handleClick = ()=>{
-    const name = document.getElementById('myname')?.nodeValue;
+    const nameComponent = document.getElementById('myname');
     
-    if(name != undefined && null){
-  axios.post('https://philip-webdev.github.io/telegram-webApp/profiler', {name})
-  console.log('here');
- }}
+    if(nameComponent != null){
+      const naming = nameComponent.nodeValue;
+  axios.post('https://philip-webdev.github.io/telegram-webApp/profiler', {naming})
+  
+ }
+else{
+  console.log('error');
+}}
 
 return(
     

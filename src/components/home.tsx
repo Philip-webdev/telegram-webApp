@@ -67,7 +67,7 @@ const food = ()=> {
             const name =  await axios.get('https://philip-webdev.github.io/telegram-webApp/profiler');
         
           setFren(name.data);
-               console.log('hi')
+             
         }
 //useEffect(()=>{
    /// onSubmitPersonalData();
