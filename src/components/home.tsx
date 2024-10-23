@@ -64,7 +64,7 @@ const food = ()=> {
     //const name = document.getElementById('name')?.nodeValue
         const [fren, setFren] = useState('fren');
         const onSubmitPersonalData = async ()=>{
-            const name =  await axios.get('https://philip-webdev.github.io/telegram-webApp/profiler');
+            const name =  await axios.get('https://philip-webdev.github.io');
         
           setFren(name.data);
              
