@@ -61,8 +61,9 @@ const food = ()=> {
     }
    
         const [fren, setFren] = useState('fren');
-        const onSubmitPersonalData =  async()=>{
-            const name = await  axios.get('https://twa-backend-g83o.onrender.com/profile');
+
+const onSubmitPersonalData =  async()=>{
+     const name = await  axios.get('https://twa-backend-g83o.onrender.com/profile');
         
           setFren(name.data);
              
@@ -249,7 +250,7 @@ return(
     <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}}  onClick={fruits}>Fruits  <FaAppleAlt/> </button>
     <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
 
-    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'7px' ,width:'300px', height:'150px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
+    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'19px' ,width:'300px', height:'150px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
         <div id='slideContents' style={{height:'100%', width:'100%', display:'flex', transition:'1s ease'}}>
 <img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
 <img src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid' height='300px' width='320px'/>
