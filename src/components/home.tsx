@@ -64,12 +64,7 @@ const food = ()=> {
     const onSubmitPersonalData = async () => {
       try {
         const response = await axios.get('https://twa-backend-g83o.onrender.com/profile', {
-          withCredentials: true, // if you're using cookies/sessions
-          headers: {
-            'Content-Type': 'application/json',
-            // Add any other required headers here
-          }
-        });
+          headers: { 'Content-Type': 'application/json'}});
         
         setFren(response.data);
       } catch (error) {
