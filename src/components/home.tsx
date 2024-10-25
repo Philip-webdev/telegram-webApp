@@ -113,7 +113,6 @@ const product_data_3 = {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({product3})
 };
-
 const product_data_4 = {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
