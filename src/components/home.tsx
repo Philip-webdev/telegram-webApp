@@ -60,14 +60,24 @@ const food = ()=> {
         }
     }
    
-        const [fren, setFren] = useState('fren');
+    const [fren, setFren] = useState('fren');
 
-const onSubmitPersonalData =  async()=>{
-     const name = await  axios.get('https://twa-backend-g83o.onrender.com/profile');
+    const onSubmitPersonalData = async () => {
+      try {
+        const response = await axios.get('https://twa-backend-g83o.onrender.com/profile', {
+          withCredentials: true, // if you're using cookies/sessions
+          headers: {
+            'Content-Type': 'application/json',
+            // Add any other required headers here
+          }
+        });
         
-          setFren(name.data);
-             
-        }
+        setFren(response.data);
+      } catch (error) {
+        console.error('Error fetching profile:', error);
+        // Handle error appropriately
+      }
+    };
 //useEffect(()=>{
    /// onSubmitPersonalData();
 //}, [])
