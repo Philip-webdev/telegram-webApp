@@ -70,7 +70,7 @@ const StyledApp = styled.div`
     
     if(nameComponent != null){
       const naming = nameComponent.nodeValue;
-  axios.post('https://philip-webdev.github.io', {naming})
+  axios.post('https://twa-backend-g83o.onrender.com/profile', {naming})
   
  }
 else{
