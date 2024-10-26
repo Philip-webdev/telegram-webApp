@@ -63,7 +63,7 @@ const food = ()=> {
     const [fren, setFren] = useState('fren');
     const onSubmitPersonalData = async () => {
       try {
-        const response = await axios.get('https://twa-backend-g83o.onrender.com/profile', {
+        const response = await axios.get('https://philip-webdev.github.io/telegram-webApp/profiler', {
           headers: { 'Content-Type': 'application/json'}});
         
         setFren(response.data);
@@ -72,9 +72,9 @@ const food = ()=> {
         // Handle error appropriately
       }
     };
-//useEffect(()=>{
-   /// onSubmitPersonalData();
-//}, [])
+useEffect(()=>{
+ onSubmitPersonalData();
+}, [])
       // i need to set   a listner fr ckicks on each products. 
       // it actually does the action of storing on local storage. 
       //I should be getiing items at the revelant component.
