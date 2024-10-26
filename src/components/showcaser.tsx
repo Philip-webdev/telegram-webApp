@@ -7,7 +7,7 @@ import { Button } from "./styled/styled";
 const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
-  position: fixed;
+  position: absolute;
  
   @media (prefers-color-scheme: dark) {
     background-color:  rgb(29, 40, 58);
@@ -25,7 +25,7 @@ function Frontier(){
 
     return(
         <div style={{width:'100%'}}>
-          <StyledApp>
+         
            <div>
             <h1 style={{textAlign:'center', fontSize:'larger'}}>Welcome to GroTon</h1>
             <p style={{textAlign:'center'}}>Telegram's first fiat and web3 
@@ -33,7 +33,7 @@ function Frontier(){
            </div>
 <p style={{textAlign:'center'}}><Button style={{textAlign:'center',margin:'auto', width:'50%'}}><a style={{textDecoration:'none', color:'white'}} href='#/home'>Open App</a></Button>
 </p>       
-</StyledApp>
+
         </div>
     );
 }

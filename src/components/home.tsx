@@ -264,7 +264,7 @@ return(
 <section id='wrapper'  style={{display:'flex', overflow:'hidden', width:styles.width, color:'white', marginLeft:'1%' , height:'900px'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'7px'}}>
-    < section style={{display:'inline', zoom:'330%'}}>
+    < section style={{display:'inline', zoom:'330%', overflow:'scroll'}}>
 <div onClick={saveProduct1}  className="items" style={{display:'flex',borderRadius:'5px',margin:'6px',  height: '20px', width: '90px', backgroundColor: '#e8e8e8'}}>
 <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
 <caption  id='one'  style={{zoom:'20%', color:'black', margin:'10px', marginTop:'15%', cursor:'pointer',marginLeft:'60%'}}>pear</caption>

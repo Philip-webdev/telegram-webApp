@@ -26,16 +26,17 @@
     "ton": "^6.13.1",
     "ton-core": "^0.46.0",
     "ton-crypto": "^3.2.0",
-    "use-local-storage": "^2.3.6",
-    "vite-plugin-node-polyfills": "^0.2.0"
+    "use-local-storage": "^2.3.6"
   },
   "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^3.0.1",
     "typescript": "^4.9.5",
-    "vite": "^4.0.4"
+    "vite": "^4.0.4",
+    "vite-plugin-node-polyfills": "^0.22.0"
   }
 }
