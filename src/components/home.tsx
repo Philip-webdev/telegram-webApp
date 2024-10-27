@@ -249,9 +249,7 @@ return(
 
 
     <br></br><br></br>
-    <div id='navs' style={{ fontFamily: 'Lexend' , zoom:'80%'}}><button style={{display:'inline', fontFamily: 'Lexend' ,textJustify:'inherit', margin:'10px', padding:'7px',background:'white', border:'2px solid black', borderRadius:'7px'}}  onClick={food}>Food stuff   <FaBreadSlice/> </button>
-    <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}}  onClick={fruits}>Fruits  <FaAppleAlt/> </button>
-    <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
+    
 
     <div  id='slideContainer' style={{zIndex:'0',marginLeft:'19px' ,width:'300px', height:'150px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
         <div id='slideContents' style={{height:'100%', width:'100%', display:'flex', transition:'1s ease'}}>
@@ -260,30 +258,33 @@ return(
 <img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
         </div>
     
-</div>
+</div> <br></br>
+<div id='navs' style={{marginLeft:'10%',fontFamily: 'Lexend' , zoom:'50%'}}><button style={{display:'inline', fontFamily: 'Lexend' ,textJustify:'inherit', margin:'7px', padding:'7px',background:'white', border:'2px solid black', borderRadius:'10px'}}  onClick={food}>Food stuff   <FaBreadSlice/> </button>
+    <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}}  onClick={fruits}>Fruits  <FaAppleAlt/> </button>
+    <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
 <section id='wrapper'  style={{display:'flex', overflow:'hidden', width:styles.width, color:'white', marginLeft:'1%' , height:'900px'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'7px'}}>
     < section style={{display:'inline', zoom:'330%', overflow:'scroll'}}>
-<div onClick={saveProduct1}  className="items" style={{display:'flex',borderRadius:'5px',margin:'6px',  height: '20px', width: '90px', backgroundColor: '#e8e8e8'}}>
+<div onClick={saveProduct1}  className="items" style={{display:'flex',borderRadius:'5px',margin:'6px',  height: '20px', width: '90px', backgroundColor: 'rgb(188, 193, 205'}}>
 <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
 <caption  id='one'  style={{zoom:'20%', color:'black', margin:'10px', marginTop:'15%', cursor:'pointer',marginLeft:'60%'}}>pear</caption>
 </div>
-<div  onClick={saveProduct2} id='prod_two'className="items" style={{display:'flex',borderRadius:'5px', margin:'6px', height: '20px', width:'90px', backgroundColor: '#e8e8e8'}}>
+<div  onClick={saveProduct2} id='prod_two'className="items" style={{display:'flex',borderRadius:'5px', margin:'6px', height: '20px', width:'90px', backgroundColor: 'rgb(245, 180, 194)'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src='   https://ouch-cdn2.icons8.com/9J-tqJWz53hWH0mo75-dhyg9cVrv3rNPoUfGLFVaw_k/rs:fit:368:143/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTQv/NDBlNGFkMjYtOTA2/ZS00MWM1LTllNjQt/OTk0Y2UzMWJkNjM1/LnN2Zw.png'/>
     <caption  style={{zoom:'20%', color:'black', margin:'10px',marginTop:'15%',   cursor:'pointer',marginLeft:'60%'}}>pear</caption>
    </div>
-<div  onClick={saveProduct3} id='prod_three' className="items" style={{display:'flex',borderRadius:'5px', margin:'6px', height: '20px', width:'90px', backgroundColor: '#e8e8e8'}}>
+<div  onClick={saveProduct3} id='prod_three' className="items" style={{display:'flex',borderRadius:'5px', margin:'6px', height: '20px', width:'90px', backgroundColor: 'rgb(206, 172, 102'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/ET5TgmBkf_yeuGltz9l7yp01wtX9aJMD-Nh8zz4UphY/rs:fit:368:320/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzQ4/L2RkNzk5ZTczLWJj/YTEtNDBlMC04NmNj/LTU4Nzk5NzVkYjdl/YS5wbmc.png'/>
     <caption style={{zoom:'20%', color:'black', margin:'10px',marginTop:'15%',   cursor:'pointer', marginLeft:'60%'}}>pear</caption>
    </div></section>
     
 
-<section style={{display:'inline',zoom:'330%'}}><div onClick={saveProduct4} id='prod_four' className="items" style={{display:'flex',borderRadius:'5px',margin:'6px',  height: '20px', width:'90px', backgroundColor: '#e8e8e8'}}>
+<section style={{display:'inline',zoom:'330%'}}><div onClick={saveProduct4} id='prod_four' className="items" style={{display:'flex',borderRadius:'5px',margin:'6px',  height: '20px', width:'90px', backgroundColor: 'rgb(232, 232, 232)'}}>
   <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/5cIK3aleg5XZUrrfkNJOBKzFMYxtpOXeo181NvzVob8/rs:fit:368:442/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzY0/L2I1MDhhMDU0LTU3/ZWItNDJhYS1iY2Iz/LWVkYWU2OTRmOGU5/ZC5wbmc.png'/>
   <caption  style={{zoom:'20%', color:'black', margin:'10px', marginTop:'15%',  cursor:'pointer',marginLeft:'60%'}}>pear</caption>
     </div>
-<div onClick={saveProduct5} id='prod_five' className="items" style={{display:'flex',borderRadius:'5px',margin:'6px',  height: '20px', width:'90px', backgroundColor: '#e8e8e8'}}>
+<div onClick={saveProduct5} id='prod_five' className="items" style={{display:'flex',borderRadius:'5px',margin:'6px',  height: '20px', width:'90px', backgroundColor: 'rgb(202, 232, 232)'}}>
     <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
     <caption  style={{zoom:'20%', color:'black', margin:'10px', marginTop:'15%',  cursor:'pointer',marginLeft:'60%'}}>pear</caption>
 </div>

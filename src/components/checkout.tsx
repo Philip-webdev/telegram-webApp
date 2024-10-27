@@ -15,7 +15,7 @@ import { FaGamepad } from "react-icons/fa";
 
 
 const StyledApp = styled.div`
-  background-color: #e8e8e8;
+  background-color: whitesmoke;
   color: black;
    position: fixed;
    font-family:'Lexend';
@@ -24,8 +24,8 @@ const StyledApp = styled.div`
     background-color:  rgb(29, 40, 58);
     color: white;
   }
-  min-height: 100vh;
-  padding: 20px 30px;
+  min-height: 90vh;
+  padding: 20px 17px;
 `;
 
 const AppContainer = styled.div`
@@ -41,7 +41,7 @@ function checkout() {
       <AppContainer>
         <FlexBoxCol>
           <FlexBoxRow>
-           <a href="#/home" style={{color:'black', textDecoration:'none'}}> <BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:'150%'}}/></a>
+           <a href="#/home" style={{color:'black', textDecoration:'none'}}> <BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:'150%', marginRight:'7px'}}/></a>
             <TonConnectButton />
             <Button>
               {network

@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Address } from "ton";
-import {  toNano } from "ton";
+import {  Address, toNano } from "ton";
 import { useTonConnect } from "../hooks/useTonConnect";
 import { Card, FlexBoxCol, FlexBoxRow, Button, Input } from "./styled/styled";
-
+import { SenderArguments } from "ton-core";
 export function TransferTon() {
   const { sender, connected } = useTonConnect();
 
@@ -37,9 +36,9 @@ export function TransferTon() {
           disabled={!connected}
           style={{ marginTop: 18}}
           onClick={async () => {
-            const Recipient = Address.parse(tonRecipient);
+            const Recipient = Address.parse(tonRecipient) as Address;
            await sender.send({
-              to: Recipient,
+              to:tonRecipient,
               value: toNano(tonAmount),
             });
           }}
