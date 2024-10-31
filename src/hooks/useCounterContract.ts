@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import Counter from "../contracts/counter";
 import { useTonClient } from "./useTonClient";
 import { useAsyncInitialize } from "./useAsyncInitialize";
@@ -14,13 +14,13 @@ export function useCounterContract() {
   const counterContract = useAsyncInitialize(async () => {
     if (!client) return;
     const contract = new Counter(
-      Address.parse(
+      Address.parseRaw(
         network === CHAIN.MAINNET
           ? "EQBPEDbGdwaLv1DKntg9r6SjFIVplSaSJoJ-TVLe_2rqBOmH"
           : "EQBYLTm4nsvoqJRvs_L-IGNKwWs5RKe19HBK_lFadf19FUfb"
       ) // replace with your address from tutorial 2 step 8
     );
-    return client.open(contract) as OpenedContract<Counter>;
+    return client.open(contract) as  OpenedContract<Counter>;
   }, [client]);
 
   const { data, isFetching } = useQuery(
