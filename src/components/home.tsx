@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { CorsOptions } from 'cors';
 import 'react-icons/bs';
 import '../index.css';
 import axios from 'axios';
@@ -31,11 +30,7 @@ const AppContainer = styled.div`
   margin: 0 auto;
 `;
 function home(){
-    const corsOptions = {
-        origin: ['https://philip-webdev.github.io/telegram-webApp', 'https://twa-backend-g83o.onrender.com'],
-        methods: ['GET', 'POST'],
-        allowedHeaders: ['Content-Type'],
-    };
+    
 const styles = {width:'350px', maxWidth:'810px'};
  
 // const commodity = {name:document.getElementById('')?.innerText, price:document.getElementById('')?.innerText}
