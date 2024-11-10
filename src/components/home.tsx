@@ -152,9 +152,7 @@ const saveProduct1 = ()=>{
                 axios.post('https://philip-webdev.github.io/telegram-webApp/orderly', {product_data_1});
             
         }
-        else{
-            axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', product_data_1);
-        }
+   
     }
 
   
