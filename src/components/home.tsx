@@ -149,7 +149,7 @@ const product_data_9 = {
 const saveProduct1 = ()=>{
   
             if(product1  !=null && product1 != undefined){
-                axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly', {product_data_1});
+                axios.post('https://twa-backend-g83o.onrender.com/telegram-webApp/product', {product_data_1});
             
         }
    
