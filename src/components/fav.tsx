@@ -59,7 +59,7 @@ if (divdisplay != null){
 }
 
 const doings = ()=>{
-axios.get('https://twa-backend-g83o.onrender.com/telegram-webApp/orderly') 
+axios.get('https://twa-backend-g83o.onrender.com/orderly') 
             .then(
                 async (response)=>{
                const result = response;
