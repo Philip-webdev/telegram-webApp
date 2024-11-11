@@ -59,7 +59,8 @@ if (divdisplay != null){
 }
 
 const doings = ()=>{
-axios.get('https://twa-backend-g83o.onrender.com/orderly') 
+axios.get('https://twa-backend-g83o.onrender.com/orderly')
+axios.get('https://twa-backend-g83o.onrender.com/product')
             .then(
                 async (response)=>{
                const result = response;
