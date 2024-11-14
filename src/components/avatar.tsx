@@ -70,7 +70,7 @@ const StyledApp = styled.div`
     
     if(nameComponent != null){
       const naming = nameComponent.nodeValue;
-  axios.post('https://philip-webdev.github.io/telegram-webApp/profiler', {naming})
+  axios.post('https://philip-webdev.github.io/profiler', {naming})
   
  }
 else{
