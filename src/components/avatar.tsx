@@ -78,7 +78,7 @@ const StyledApp = styled.div`
       };
 
       try {
-          const response = await fetch('https://your-backend-url/profiler', {
+          const response = await fetch('https://twa-backend-g83o.onrender.com/profiler', {
               method: 'POST',
               headers: {
                   'Content-Type': 'application/json',
