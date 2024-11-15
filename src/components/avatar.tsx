@@ -1,7 +1,7 @@
 import axios from "axios";
-import { useState } from "react";
+import {  useState } from "react";
 import 'react-icons/bs';
-import { BsArrowBarLeft, BsArrowLeftCircle, BsCart3, BsFillWalletFill, BsHeart } from "react-icons/bs";
+import { BsArrowLeftCircle, BsCart3, BsFillWalletFill, BsHeart } from "react-icons/bs";
 import { FaGamepad } from "react-icons/fa";
 import styled from "styled-components";
 import { Button } from "./styled/styled";
@@ -65,17 +65,38 @@ const StyledApp = styled.div`
   setShowAvatars(false);
  }
 
- const handleClick = ()=>{
-    const nameComponent = document.getElementById('myname');
-    
-    if(nameComponent != null){
-      const naming = nameComponent.nodeValue;
-  axios.post('https://philip-webdev.github.io/profiler', {naming})
-  
- }
-else{
-  console.log('error');
-}}
+ 
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const handleSubmit = async (_e: any) => {
+      _e.preventDefault(); // Prevent the default form submission
+
+      const profileData = {
+          name: name,
+          Phone: phone,
+      };
+
+      try {
+          const response = await fetch('https://your-backend-url/profiler', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(profileData), // Convert the data to JSON
+          });
+
+          if (!response.ok) {
+              throw new Error('Network response was not ok');
+          }
+
+          const result = await response.json();
+          console.log('Profile saved:', result); // Handle the response as needed
+      } catch (error) {
+          console.error('Error saving profile:', error);
+      }
+  };
+
 
 return(
     
@@ -83,9 +104,24 @@ return(
        <StyledApp style={{ width: '100%'}}> <a href="#/home" style={{color:'black', textDecoration:'none'}}><BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:"150%"}}/></a><div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', borderColor:'rgb(46, 172, 219)', borderRadius:'100%', width:'fit-content'}}>{avatar}</p>
        </div>
        <div><h1>Your profile</h1>
-      <p id="name" >your name <input id="myname" defaultValue='' name='name' type="text" placeholder="fren" style={{borderBottomColor:' white',border:'none', background:'none', borderRadius:'5px'}}/></p>
-      <button onClick={handleClick} type="submit">mem</button></div>
-
+      Your name <form onSubmit={handleSubmit}>
+          <input
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+          /><br></br>
+          <input
+              type="number"
+              placeholder="Phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              required
+          /><br></br>
+          <button type="submit">Submit</button>
+      </form>
+</div>
        <button onClick={changeAvatar} onDoubleClick={dblclicks}>Show Avatars</button><br></br>
       {showAvatars && (
         <div id="vector" style={{ background: 'none', display: 'flex', flexWrap: 'wrap' ,marginRight:'2px'}}>
