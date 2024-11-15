@@ -7,7 +7,7 @@ import 'react-icons/fa';
 import { Button } from "./styled/styled";
 import './avatar';
 import {  BsBag, BsCart3, BsFillWalletFill, BsHeart,  BsPlus} from 'react-icons/bs';
-import { FaAppleAlt,  FaBreadSlice, FaFire, FaGamepad, FaGift} from 'react-icons/fa';
+import { FaAppleAlt,  FaBreadSlice, FaFire, FaGamepad, FaGetPocket, FaGift} from 'react-icons/fa';
 
 
 const StyledApp = styled.div`
@@ -271,19 +271,25 @@ return(
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'7px'}}>
     < section style={{display:'flex', zoom:'330%', height:'fit-content'}}>
 <div onClick={saveProduct1}  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}>
+   <p style={{ position: 'sticky' , color:'grey',  marginTop:'40px'}}>$100</p>
+    < FaGetPocket style={{ position: 'sticky' ,color:'black', marginLeft: '10px', marginTop:'40px'}}/>
 {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
 <BsBag style={{marginTop:'5%',marginLeft:'67%', color:'black', zoom:'70%'}}/> */}
 </div>
 <div  onClick={saveProduct2} id='prod_two'className="items" style={{height: '50px',display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', border: '1px solid rgb(245, 180, 194)'}}>
+<p style={{ position: 'sticky' , color:'grey',  marginTop:'40px'}}>$100</p>
+    < FaGetPocket style={{ position: 'sticky' , color:'black', marginLeft: '10px', marginTop:'40px'}}/>
     {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src='   https://ouch-cdn2.icons8.com/9J-tqJWz53hWH0mo75-dhyg9cVrv3rNPoUfGLFVaw_k/rs:fit:368:143/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTQv/NDBlNGFkMjYtOTA2/ZS00MWM1LTllNjQt/OTk0Y2UzMWJkNjM1/LnN2Zw.png'/>
     <BsBag style={{marginTop:'5%',marginLeft:'67%', color:'black', zoom:'70%'}}/> */}
    </div>
 <div  onClick={saveProduct3} id='prod_three' className="items" style={{height: '50px',display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', border: '1px solid rgb(206, 172, 102'}}>
-    {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/ET5TgmBkf_yeuGltz9l7yp01wtX9aJMD-Nh8zz4UphY/rs:fit:368:320/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzQ4/L2RkNzk5ZTczLWJj/YTEtNDBlMC04NmNj/LTU4Nzk5NzVkYjdl/YS5wbmc.png'/>
+<p style={{ position: 'sticky' , color:'grey',  marginTop:'40px'}}>$100</p>
+< FaGetPocket style={{color:'black', marginLeft: '10px', marginTop:'40px'}}/>{/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/ET5TgmBkf_yeuGltz9l7yp01wtX9aJMD-Nh8zz4UphY/rs:fit:368:320/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzQ4/L2RkNzk5ZTczLWJj/YTEtNDBlMC04NmNj/LTU4Nzk5NzVkYjdl/YS5wbmc.png'/>
     <BsBag style={{marginTop:'5%',marginLeft:'67%', color:'black',zoom:'70%'}}/> */}
    </div> 
 <div onClick={saveProduct4} id='prod_four' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: ' 1px solid rgb(232, 232, 232)'}}>
-  {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/5cIK3aleg5XZUrrfkNJOBKzFMYxtpOXeo181NvzVob8/rs:fit:368:442/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzY0/L2I1MDhhMDU0LTU3/ZWItNDJhYS1iY2Iz/LWVkYWU2OTRmOGU5/ZC5wbmc.png'/>
+<p style={{ position: 'sticky' , color:'grey',  marginTop:'40px'}}>$100</p>
+< FaGetPocket style={{background:'greenyellow', position: 'sticky' ,color:'black', marginLeft: '10px', marginTop:'40px'}}/> {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/5cIK3aleg5XZUrrfkNJOBKzFMYxtpOXeo181NvzVob8/rs:fit:368:442/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzY0/L2I1MDhhMDU0LTU3/ZWItNDJhYS1iY2Iz/LWVkYWU2OTRmOGU5/ZC5wbmc.png'/>
  <BsBag style={{marginTop:'5%',marginLeft:'70%', color:'black', zoom:'70%'}}/> */}
     </div>
 <div onClick={saveProduct5} id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}>
@@ -291,35 +297,35 @@ return(
    <BsBag style={{marginTop:'5%',marginLeft:'70%', color:'black', zoom:'70%'}}/> */}
 </div>
 <div onClick={saveProduct6} id='prod_six' className="items" style={{height: '50px',display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-    {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4w-wbnJaspImr0-rImGetVrt_UGrTVPKkYj_GdWx6VU/rs:fit:368:484/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTUz/LzM4MmFlMGRhLTlj/OGYtNDcwNy1iZDAz/LWQyOTJlZDc3M2Yw/NC5wbmc.png'/>
+< FaGetPocket style={{color:'black', marginLeft: '10px', marginTop:'40px'}}/> {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4w-wbnJaspImr0-rImGetVrt_UGrTVPKkYj_GdWx6VU/rs:fit:368:484/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTUz/LzM4MmFlMGRhLTlj/OGYtNDcwNy1iZDAz/LWQyOTJlZDc3M2Yw/NC5wbmc.png'/>
    <BsBag style={{marginTop:'5%',marginLeft:'70%', color:'black', zoom:'70%'}}/> */}
    </div>
 
 <div onClick={saveProduct7} id='prod_seven' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', backgroundColor: '#e8e8e8'}}>
-    {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
+< FaGetPocket style={{color:'black', marginLeft: '20px', marginTop:'40px'}}/> {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/BeHnWh41tAHTg1zxTla1u36mz_qQqLaKI-W37IVUqE4/rs:fit:368:687/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDI3/LzBjYjdjOTJlLTBj/ZDEtNGY4Ni1hNTli/LWFkYWZmODcxNDY3/Yy5zdmc.png'/>
    <BsBag style={{marginTop:'5%',marginLeft:'67%', color:'black', zoom:'70%'}}/> */}
    </div>
 <div onClick={saveProduct8} id='prod_eight' className="items" style={{height: '50px',display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-   {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src='   https://ouch-cdn2.icons8.com/9J-tqJWz53hWH0mo75-dhyg9cVrv3rNPoUfGLFVaw_k/rs:fit:368:143/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTQv/NDBlNGFkMjYtOTA2/ZS00MWM1LTllNjQt/OTk0Y2UzMWJkNjM1/LnN2Zw.png'/>
+< FaGetPocket style={{color:'black', marginLeft: '20px', marginTop:'40px'}}/>  {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src='   https://ouch-cdn2.icons8.com/9J-tqJWz53hWH0mo75-dhyg9cVrv3rNPoUfGLFVaw_k/rs:fit:368:143/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvOTQv/NDBlNGFkMjYtOTA2/ZS00MWM1LTllNjQt/OTk0Y2UzMWJkNjM1/LnN2Zw.png'/>
    <BsBag style={{marginTop:'7%',marginLeft:'67%', color:'black', zoom:'70%'}}/> */}
    </div>
 <div onClick={saveProduct9} id='prod_nine' className="items" style={{height: '50px', display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', backgroundColor: '#e8e8e8'}}>
- {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/ET5TgmBkf_yeuGltz9l7yp01wtX9aJMD-Nh8zz4UphY/rs:fit:368:320/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzQ4/L2RkNzk5ZTczLWJj/YTEtNDBlMC04NmNj/LTU4Nzk5NzVkYjdl/YS5wbmc.png'/>
+< FaGetPocket style={{color:'black', marginLeft: '20px', marginTop:'40px'}}/> {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/ET5TgmBkf_yeuGltz9l7yp01wtX9aJMD-Nh8zz4UphY/rs:fit:368:320/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMzQ4/L2RkNzk5ZTczLWJj/YTEtNDBlMC04NmNj/LTU4Nzk5NzVkYjdl/YS5wbmc.png'/>
 <BsBag style={{marginTop:'7%',marginLeft:'67%', color:'black', zoom:'70%'}}/> */}
 </div>
 
 
 
 <div className="items" style={{borderRadius:'5px',margin:'6px',  width:'30px', backgroundColor: '#e8e8e8', border:'1px solid black'}}>
-    {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
+< FaGetPocket style={{color:'black', marginLeft: '20px', marginTop:'40px'}}/> {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/>
     */}
 </div>
 <div className="items" style={{borderRadius:'6px', margin:'5px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-    {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/> */}
+< FaGetPocket style={{color:'black', marginLeft: '20px', marginTop:'40px'}}/> {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4E_6STmrlhph_nKBUI8Tv5Pr9TGiE74C4w6cB3Pzh3w/rs:fit:368:317/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjAx/LzZiMGUyMGMzLTIy/MTEtNDg0OS05MDMy/LTUxNWZjMjljMTQ1/My5zdmc.png'/> */}
     </div>
 
 <div className="items" style={{borderRadius:'5px', margin:'6px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-    {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4w-wbnJaspImr0-rImGetVrt_UGrTVPKkYj_GdWx6VU/rs:fit:368:484/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTUz/LzM4MmFlMGRhLTlj/OGYtNDcwNy1iZDAz/LWQyOTJlZDc3M2Yw/NC5wbmc.png'/>
+< FaGetPocket style={{color:'black', marginLeft: '20px', marginTop:'40px'}}/> {/* <img style={{margin:'5.5px', zoom:'70%'}} height='17px' width='17px' src=' https://ouch-cdn2.icons8.com/4w-wbnJaspImr0-rImGetVrt_UGrTVPKkYj_GdWx6VU/rs:fit:368:484/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvOTUz/LzM4MmFlMGRhLTlj/OGYtNDcwNy1iZDAz/LWQyOTJlZDc3M2Yw/NC5wbmc.png'/>
      */}
     </div>
     </section>
@@ -330,18 +336,18 @@ return(
     <div id="container2" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_fruit" style={{display:'inline', justifyContent:'space-around', height:'auto', margin:'0px'}}>
     <section style={{display:'flex', zoom:'330%'}}>
-        <div className="items" style={{borderRadius:'5px',margin:'6px',   width:'30px', backgroundColor: 'blue'}}></div>
-<div className="items" style={{borderRadius:'5px',margin:'6px', height:'50px' , width:'30px', backgroundColor: 'blue'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px', height:'50px' , width:'30px', backgroundColor: 'blue'}}></div>
+        <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+ <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
 
-<div className="items" style={{borderRadius:'5px',margin:'6px', height:'50px' ,  width:'30px', backgroundColor: 'blue'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px', height:'50px' ,  width:'30px', backgroundColor: 'blue'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px', height:'50px' , width:'30px', backgroundColor: 'blue'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
 
 
-<div className="items" style={{borderRadius:'5px',margin:'6px', height:'50px' , width:'30px', backgroundColor: 'blue'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px', height:'50px' , width:'30px', backgroundColor: 'blue'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px', height:'50px' , width:'30px', backgroundColor: 'blue'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+ <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+ <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
 </section>
     </div>    </div>
     </section>
@@ -349,19 +355,16 @@ return(
     <section id='wrapper3'  style={{display:'flex', overflow:'scroll', width:styles.width, color:'white', marginLeft:'%' , height:'auto'}}>
     <div id="container3" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_packaged" style={{display:'inline', justifyContent:'space-around', height:'300px', margin:'10px'}}>
-    <section style={{display:'flex', zoom:'330%'}}><div className="items" style={{borderRadius:'5px',margin:'6px',   width:'30px', backgroundColor: 'pink'}}></div>
-<div className="items" style={{borderRadius:'5px',margin:'6px', height:'50px' ,  width:'30px', backgroundColor: 'pink'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px',height:'50px' ,  width:'30px', backgroundColor: 'pink'}}></div>
+    <section style={{display:'flex', zoom:'330%'}}><div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
  
-<div className="items" style={{borderRadius:'5px',margin:'6px', height:'50px' ,  width:'30px', backgroundColor: 'pink'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px',  width:'30px',height:'50px' , backgroundColor: 'pink'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px', height:'50px' , width:'30px', backgroundColor: 'pink'}}></div>
- 
-    
- 
-<div className="items" style={{borderRadius:'5px',margin:'6px', height:'50px' , width:'30px', backgroundColor: 'pink'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px', height:'50px' , width:'30px', backgroundColor: 'pink'}}></div>
-<div className="items" style={{borderRadius:'5px', margin:'6px', height:'50px' , width:'30px', backgroundColor: 'pink'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div> 
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
 </section>
 
     </div></div>
