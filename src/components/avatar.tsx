@@ -71,8 +71,8 @@ const StyledApp = styled.div`
   const [Email, setEmail] = useState('');
 
 
-  const handleSubmit = async (_e: any) => {
-      _e.preventDefault(); // Prevent the default form submission
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
+      e.preventDefault(); // Prevent the default form submission
 
       const profileData = {
           name: name,
@@ -113,7 +113,7 @@ return(
               placeholder="Name"
               id = "name"
               value={name}
-              onMouseOut={(e) => setName(e.currentTarget.value)}
+              onChange={(e) => setName(e.target.value)}
               required
           /><br></br>
           <input
@@ -121,7 +121,7 @@ return(
               placeholder="Phone"
               id="Phone"
               value={phone}
-              onMouseOut={(e) => setPhone(e.currentTarget.value)}
+              onChange={(e) => setPhone(e.target.value)}
               required
           /><br></br>
            <input
@@ -129,7 +129,7 @@ return(
               placeholder="Email"
               id = "Email"
               value={Email}
-              onMouseOut={(e) => setEmail(e.currentTarget.value)}
+             onChange={(e) => setEmail(e.target.value)}
               required
           />
           <button type="submit">Submit</button>
