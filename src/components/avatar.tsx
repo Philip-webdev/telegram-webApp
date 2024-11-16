@@ -108,6 +108,7 @@ return(
           <input
               type="text"
               placeholder="Name"
+              id = "name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -115,6 +116,7 @@ return(
           <input
               type="number"
               placeholder="Phone"
+              id="Phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
