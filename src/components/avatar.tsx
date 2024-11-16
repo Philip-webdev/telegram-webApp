@@ -68,6 +68,8 @@ const StyledApp = styled.div`
  
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
+  const [Email, setEmail] = useState('');
+
 
   const handleSubmit = async (_e: any) => {
       _e.preventDefault(); // Prevent the default form submission
@@ -75,6 +77,7 @@ const StyledApp = styled.div`
       const profileData = {
           name: name,
           Phone: phone,
+          Email: Email
       };
 
       try {
@@ -121,6 +124,14 @@ return(
               onChange={(e) => setPhone(e.target.value)}
               required
           /><br></br>
+           <input
+              type="email"
+              placeholder="Email"
+              id = "Email"
+              value={Email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+          />
           <button type="submit">Submit</button>
       </form>
 </div>
