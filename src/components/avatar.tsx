@@ -113,7 +113,7 @@ return(
               placeholder="Name"
               id = "name"
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onMouseOut={(e) => setName(e.currentTarget.value)}
               required
           /><br></br>
           <input
@@ -121,7 +121,7 @@ return(
               placeholder="Phone"
               id="Phone"
               value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              onMouseOut={(e) => setPhone(e.currentTarget.value)}
               required
           /><br></br>
            <input
@@ -129,7 +129,7 @@ return(
               placeholder="Email"
               id = "Email"
               value={Email}
-              onChange={(e) => setEmail(e.target.value)}
+              onMouseOut={(e) => setEmail(e.currentTarget.value)}
               required
           />
           <button type="submit">Submit</button>
