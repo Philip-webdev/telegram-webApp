@@ -104,38 +104,39 @@ const StyledApp = styled.div`
 return(
     
     <div style={{ width: '100%'}}>
-       <StyledApp style={{ width: '100%'}}> <a href="#/home" style={{color:'black', textDecoration:'none'}}><BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:"150%"}}/></a><div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', borderColor:'rgb(46, 172, 219)', borderRadius:'100%', width:'fit-content'}}>{avatar}</p>
+       <StyledApp style={{ width: '100%'}}> 
+        <div style={{top:'0', margin:'0', display: 'flex'}}><caption><a href="#/home" style={{color:'black', textDecoration:'none'}}><BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:"150%"}}/></a></caption><caption style={{marginLeft:'27%'}}>Profile</caption></div><div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', borderColor:'rgb(46, 172, 219)', borderRadius:'100%', width:'fit-content'}}>{avatar} <p>Name</p></p>
        </div>
-       <div><h1>Your profile</h1>
-      Your name <form onSubmit={handleSubmit}>
-          <input
+       <div>
+      <br></br> <form style={{ borderRadius:'10px', background: 'white', width:'fit-content', height:'fit-content'}} onSubmit={handleSubmit}>
+          <input style={{margin:'10px',marginLeft:'50px', borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}}
               type="text"
               placeholder="Name"
               id = "name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
-          /><br></br>
-          <input
-              type="number"
+          />
+          <input style={{margin:'10px', marginLeft:'50px', borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}}
+              type="tel"
               placeholder="Phone"
               id="Phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
               required
-          /><br></br>
-           <input
+          />
+           <input style={{margin:'10px',marginLeft:'50px',borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}}
               type="email"
               placeholder="Email"
               id = "Email"
               value={Email}
              onChange={(e) => setEmail(e.target.value)}
               required
-          />
-          <button type="submit">Submit</button>
+          /><br></br>
+          <button style={{margin:'10px',marginLeft:'50px',borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}} type="submit">Submit</button>
       </form>
-</div>
-       <button onClick={changeAvatar} onDoubleClick={dblclicks}>Show Avatars</button><br></br>
+</div><br></br>
+       <button style={{margin:'10px',marginLeft:'50px',borderRadius:'7px', border:'none',  background :'white', height:'30px', width : '50%'}} onClick={changeAvatar} onDoubleClick={dblclicks}>Show Avatars</button><br></br>
       {showAvatars && (
         <div id="vector" style={{ background: 'none', display: 'flex', flexWrap: 'wrap' ,marginRight:'2px'}}>
           {avatars.map((src, index) => (
