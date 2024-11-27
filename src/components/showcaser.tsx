@@ -7,18 +7,18 @@ import { Button } from "./styled/styled";
 const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
-  position: ;
+  position:;
  
   @media (prefers-color-scheme: dark) {
     background-color:  rgb(29, 40, 58);
     color: white;
   }
   min-height: 90vh;
-  padding: 20px 30px;
+  padding: 20px 20px;
 `;
 const AppContainer = styled.div`
   width: 100%;
-  height:fit-content;
+  height:100%;
   margin: 0 auto;
 `;
 function Frontier(){
@@ -26,6 +26,7 @@ function Frontier(){
 
     return(
         <div style={{width:'100%'}}>
+        
          <AppContainer>
            <div>
             <h1 style={{textAlign:'center', fontSize:'larger'}}>Welcome to GroTon</h1>
@@ -33,7 +34,8 @@ function Frontier(){
            Grocery Market</p>
            </div>
 <p style={{textAlign:'center'}}><Button style={{textAlign:'center',margin:'auto', width:'50%'}}><a style={{textDecoration:'none', color:'white'}} href='#/home'>Open App</a></Button>
-</p>       
+</p>    
+   
 </AppContainer>
         </div>
     );

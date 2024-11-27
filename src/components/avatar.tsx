@@ -1,7 +1,7 @@
 import axios from "axios";
 import {  useState } from "react";
 import 'react-icons/bs';
-import { BsArrowLeftCircle, BsCart3, BsFillWalletFill, BsHeart } from "react-icons/bs";
+import { BsArrowLeft, BsCart3, BsFillWalletFill, BsHeart } from "react-icons/bs";
 import { FaGamepad } from "react-icons/fa";
 import styled from "styled-components";
 import { Button } from "./styled/styled";
@@ -104,12 +104,18 @@ const StyledApp = styled.div`
 return(
     
     <div style={{ width: '100%'}}>
-       <StyledApp style={{ width: '100%'}}> 
-        <div style={{top:'0', margin:'0', display: 'flex'}}><caption><a href="#/home" style={{color:'black', textDecoration:'none'}}><BsArrowLeftCircle style={{color: 'rgb(46, 172, 219)',zoom:"150%"}}/></a></caption><caption style={{marginLeft:'27%'}}>Profile</caption></div><div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', borderColor:'rgb(46, 172, 219)', borderRadius:'100%', width:'fit-content'}}>{avatar} <p>Name</p></p>
+       <StyledApp style={{ width: 'fit-content'}}> 
+        <div style={{top:'0', margin:'0', display: 'flex', justifyContent:"space-between"}}>
+          <caption><a href="#/home" style={{color:'black', textDecoration:'none'}}>
+        <BsArrowLeft style={{color: 'black',zoom:"110%", left:'0'}}/></a>
+        </caption><caption style={{textAlign:'center'}}>Edit Profile</caption>
+        </div>
+        <div style={{width:'50%', margin: 'auto'}}><p style={{textAlign:'center', borderColor:'rgb(46, 172, 219)', borderRadius:'100%' }}>{avatar} <p>Name</p></p>
        </div>
-       <div>
-      <br></br> <form style={{ borderRadius:'10px', background: 'white', width:'fit-content', height:'fit-content'}} onSubmit={handleSubmit}>
-          <input style={{margin:'10px',marginLeft:'50px', borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}}
+       <div style={{left:'0'}}>
+      <br></br> 
+      <form style={{ borderRadius:'10px', background: 'white', width:'auto', height:'fit-content',marginLeft: '7%', marginRight: '7%' }} onSubmit={handleSubmit}>
+          <input style={{margin:'auto', width : '50%', marginLeft:'20%', marginTop:'4%', borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px'}}
               type="text"
               placeholder="Name"
               id = "name"
@@ -117,7 +123,7 @@ return(
               onChange={(e) => setName(e.target.value)}
               required
           />
-          <input style={{margin:'10px', marginLeft:'50px', borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}}
+          <input style={{  marginLeft:'20%', marginTop:'4%', borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}}
               type="tel"
               placeholder="Phone"
               id="Phone"
@@ -125,7 +131,7 @@ return(
               onChange={(e) => setPhone(e.target.value)}
               required
           />
-           <input style={{margin:'10px',marginLeft:'50px',borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}}
+           <input style={{ marginLeft:'20%', marginTop:'4%', borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}}
               type="email"
               placeholder="Email"
               id = "Email"
@@ -133,10 +139,10 @@ return(
              onChange={(e) => setEmail(e.target.value)}
               required
           /><br></br>
-          <button style={{margin:'10px',marginLeft:'50px',borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}} type="submit">Submit</button>
+          <button style={{ marginLeft:'20%', marginTop:'4%', marginBottom:'5%', borderRadius:'7px', border:'none',  background :'whitesmoke', height:'30px', width : '50%'}} type="submit">Submit</button>
       </form>
 </div><br></br>
-       <button style={{margin:'10px',marginLeft:'50px',borderRadius:'7px', border:'none',  background :'white', height:'30px', width : '50%'}} onClick={changeAvatar} onDoubleClick={dblclicks}>Show Avatars</button><br></br>
+       <button style={{ marginLeft:'20%', marginTop:'4%',borderRadius:'7px', border:'none',  background :'white', height:'30px', width : '50%'}} onClick={changeAvatar} onDoubleClick={dblclicks}>Show Avatars</button><br></br>
       {showAvatars && (
         <div id="vector" style={{ background: 'none', display: 'flex', flexWrap: 'wrap' ,marginRight:'2px'}}>
           {avatars.map((src, index) => (

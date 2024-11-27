@@ -15,23 +15,25 @@ const StyledApp = styled.div`
   color: black;
   border-radius: 17px;
   position:absolute;
+  width: fit-content;
 
   @media (prefers-color-scheme: dark) {
     background-color: rgb(29, 40, 58);
     color: white;
   }
+   
   min-height: 90vh;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px;
 `;
 
 const AppContainer = styled.div`
-  max-width: 100%;
+  width: clientWidth;
   height:fit-content;
-  margin: 0 auto;
+  margin: auto ;
 `;
 function home(){
     
-const styles = {width:'350px', maxWidth:'810px'};
+const styles = {width:innerWidth, maxWidth:'810px'};
  
 // const commodity = {name:document.getElementById('')?.innerText, price:document.getElementById('')?.innerText}
 
@@ -228,7 +230,7 @@ const saveProduct9 = ()=>{
                 const slidex = ['1', '2','3', '4'];
                 currentIndex = (currentIndex + 1) % slidex.length;
                 if (slideContents != null){
-                slideContents.style.transform = 'translateX(' + (currentIndex * -300) + 'px)';
+                slideContents.style.transform = 'translateX(' + (currentIndex * -innerWidth) + 'px)';
                 
                 }
             }
@@ -239,11 +241,11 @@ const saveProduct9 = ()=>{
 
        
 return(
-<div >
+<div style={{width:'100%'}}>
     <StyledApp>
         <AppContainer>
-    <div onLoad={onSubmitPersonalData} className="header" style={{display:'flex', justifyContent:'space-between', zoom:'110%'}}>
-        <div>Hi, {fren}</div><div style={{marginRight:'17px'}}>GroTon</div><div style={{borderRadius:'100%', borderColor:'blue'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
+    <div onLoad={onSubmitPersonalData} className="header" style={{display:'flex', justifyContent:'space-between', zoom:'100%'}}>
+        <div>Hi, {fren}</div><div style={{textAlign:'center'}}>GroTon</div><div style={{borderRadius:'100%', borderColor:'blue'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
         </div>
 
     
@@ -252,11 +254,11 @@ return(
     <br></br><br></br>
     
 
-    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'19px' ,width:'300px', height:'150px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
+    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'19px' ,width:innerWidth, height:'150px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
         <div id='slideContents' style={{height:'100%', width:'100%', display:'flex', transition:'1s ease'}}>
-<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
-<img src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid' height='300px' width='320px'/>
-<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width='300px'/>
+<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width={styles.width}/>
+<img src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid' height='300px' width={styles.width}/>
+<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width={styles.width}/>
         </div>
     
 </div> <br></br>
