@@ -273,59 +273,59 @@ return(
     <div className="section_food" style={{ display:'inline', justifyContent:'space-around', height:'auto', marginRight:'7px'}}>
     < section style={{display:'flex', zoom:'330%', height:'fit-content'}}>
 <div onClick={saveProduct1}  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}>
-  <div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+  <div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
 
 </div>
 <div  onClick={saveProduct2} id='prod_two'className="items" style={{height: '50px',display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', border: '1px solid rgb(245, 180, 194)'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
    
    </div>
 <div  onClick={saveProduct3} id='prod_three' className="items" style={{height: '50px',display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', border: '1px solid rgb(206, 172, 102'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
    </div> 
 
 <div onClick={saveProduct4} id='prod_four' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: ' 1px solid rgb(232, 232, 232)'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
     </div>
 <div onClick={saveProduct5} id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
 < FaGetPocket/></div>
 </div>
 <div onClick={saveProduct6} id='prod_six' className="items" style={{height: '50px',display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
    </div>
 
 <div onClick={saveProduct7} id='prod_seven' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', backgroundColor: '#e8e8e8'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
    </div>
 <div onClick={saveProduct8} id='prod_eight' className="items" style={{height: '50px',display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
    </div>
 <div onClick={saveProduct9} id='prod_nine' className="items" style={{height: '50px', display:'flex',borderRadius:'5px', margin:'6px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
 </div>
 
 
 
 <div className="items" style={{borderRadius:'5px',margin:'5px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
 </div>
 <div className="items" style={{borderRadius:'5px', margin:'5px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
     </div>
 
 <div className="items" style={{borderRadius:'5px', margin:'5px',  width:'30px', backgroundColor: '#e8e8e8'}}>
-<div style={{zoom:'40%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
+<div style={{zoom:'30%', display:'flex', justifyContent:'space-between', gap:'23px', color: 'grey', marginTop: '140%'}}> $100
  < FaGetPocket/></div>
     </div>
     </section>
