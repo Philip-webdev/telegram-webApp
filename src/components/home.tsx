@@ -258,8 +258,8 @@ return(
         <div id='slideContents' style={{height:'fit-content', width:'auto', display:'flex', transition:'1s ease'}}>
 {/* <img src='src/components/WhatsApp_Image_2024-11-29_at_07.00.35_1f4f8a03-removebg-preview.png' height='500px' width='auto'/> */}
 
-<img src='src/components/TON fit.png' height='auto' width='auto' style={{borderRadius:'7px'}}/>
-<img src='https://photos.google.com/album/AF1QipNCBEdGrdrLtlIhE6M7HV9E6lFSZUNRYEVexfei/memory/AF1QipP93es6EggSZgF26oR9KtwIAg6PPYCBgRN1e5zYCrNrrR76uh2r1Dz5ywcd6OkZXA' height='auto' width='auto' style={{marginLeft:'7px',borderRadius:'7px'}}/>
+<img src='https://i.imgur.com/BbaNXnn.png' height='auto' width='auto' style={{borderRadius:'7px'}}/>
+<img src='https://i.imgur.com/UBMXOLK.png' height='auto' width='auto' style={{marginLeft:'7px',borderRadius:'7px'}}/>
         </div></div>
     
 </div> <br></br>
