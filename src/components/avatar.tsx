@@ -42,8 +42,10 @@ function myProfile(){
 const StyledApp = styled.div`
   background-color: whitesmoke;
   color: black;
-  position: fixed;
   
+  width: 100%;
+  height:100%;
+  margin: auto;
 
  
   @media (prefers-color-scheme: dark) {
