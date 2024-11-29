@@ -14,22 +14,22 @@ const StyledApp = styled.div`
   background-color: whitesmoke;
   color: black;
   border-radius: 17px;
-  position:absolute;
-  width: fit-content;
+  position:;
+  width:100%;
 
   @media (prefers-color-scheme: dark) {
     background-color: rgb(29, 40, 58);
     color: white;
   }
    
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 20px 20px;
 `;
 
 const AppContainer = styled.div`
-  width: clientWidth;
+  width: 100%;
   height:fit-content;
-  margin: auto ;
+  margin:0;
 `;
 function home(){
     
@@ -50,7 +50,7 @@ const styles = {width:innerWidth, maxWidth:'810px'};
    const fruits = () => {
     const translator  = document.getElementById('container');
     if(translator != null){
-    translator.style.transform = 'translateX(' + (-460) + 'px)';
+    translator.style.transform = 'translateX(' + (-450) + 'px)';
    
     }
     else{
@@ -227,7 +227,7 @@ const saveProduct9 = ()=>{
             var currentIndex = 0;
             function changeSlide(){
                
-                const slidex = ['1', '2','3', '4'];
+                const slidex = ['1', '2'];
                 currentIndex = (currentIndex + 1) % slidex.length;
                 if (slideContents != null){
                 slideContents.style.transform = 'translateX(' + (currentIndex * -innerWidth) + 'px)';
@@ -243,9 +243,9 @@ const saveProduct9 = ()=>{
 return(
 <div style={{width:'100%'}}>
     <StyledApp>
-        <AppContainer>
-    <div onLoad={onSubmitPersonalData} className="header" style={{display:'flex', justifyContent:'space-between', zoom:'100%'}}>
-        <div>Hi, {fren}</div><div style={{textAlign:'center'}}>GroTon</div><div style={{borderRadius:'100%', borderColor:'blue'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
+       <AppContainer>
+    <div onLoad={onSubmitPersonalData} className="header" style={{display:'flex', justifyContent:'space-between', zoom:'80%' }}>
+        <div style={{ marginLeft: '5px'}}>Hi, {fren}</div><div style={{textAlign:'center'}}>GroTon</div><div style={{borderRadius:'100%', borderColor:'blue'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
         </div>
 
     
@@ -253,20 +253,21 @@ return(
 
     <br></br><br></br>
     
+<div style={{justifyContent:'center'}}>
+    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'19px' , width:'auto', height:'fit-content', overflow:'hidden',  border:'none', borderRadius:'7px', justifySelf:'center'}}>
+        <div id='slideContents' style={{height:'fit-content', width:'auto', display:'flex', transition:'1s ease'}}>
+{/* <img src='src/components/WhatsApp_Image_2024-11-29_at_07.00.35_1f4f8a03-removebg-preview.png' height='500px' width='auto'/> */}
 
-    <div  id='slideContainer' style={{zIndex:'0',marginLeft:'19px' ,width:innerWidth, height:'150px', overflow:'hidden',  border:'1px solid black', borderRadius:'7px', justifySelf:'center'}}>
-        <div id='slideContents' style={{height:'100%', width:'100%', display:'flex', transition:'1s ease'}}>
-<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width={styles.width}/>
-<img src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid' height='300px' width={styles.width}/>
-<img src='src/components/Morning Coffee & Journal4.jpg' height='300px' width={styles.width}/>
-        </div>
+<img src='src/components/TON fit.png' height='auto' width='auto' style={{borderRadius:'7px'}}/>
+<img src='https://photos.google.com/album/AF1QipNCBEdGrdrLtlIhE6M7HV9E6lFSZUNRYEVexfei/memory/AF1QipP93es6EggSZgF26oR9KtwIAg6PPYCBgRN1e5zYCrNrrR76uh2r1Dz5ywcd6OkZXA' height='auto' width='auto' style={{marginLeft:'7px',borderRadius:'7px'}}/>
+        </div></div>
     
 </div> <br></br>
 <div id='navs' style={{marginLeft:'7%',fontFamily: 'Lexend' , zoom:'60%'}}><button style={{display:'inline', fontFamily: 'Lexend' ,textJustify:'inherit', margin:'7px', padding:'7px',background:'white', border:'2px solid black', borderRadius:'10px'}}  onClick={food}>Food stuff   <FaBreadSlice/> </button>
     <button style={{  fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}}  onClick={fruits}>Instant Hot  <FaFire/> </button>
     <button style={{ fontFamily: 'Lexend' ,margin:'10px', background:'white', border:'2px solid black', borderRadius:'5px', padding:'7px'}} onClick={packaged}>Packagings  <FaGift /></button></div>
   <p style={{marginLeft: '10%'}}>Raw</p>   
-<section id='wrapper'  style={{display:'flex', overflow:'scroll', width:styles.width, color:'white', marginLeft:'1%' , height:'auto'}}>
+<section id='wrapper'  style={{display:'flex', overflow:'scroll', width: innerWidth, color:'white', marginLeft:'1%' , height:'auto'}}>
   <div id="container" style={{transform:'1.5s ease',display:'flex'}} >
     
     
@@ -332,22 +333,22 @@ return(
     </div></div>
     </section >
    <p style={{marginLeft: '10%'}}> Fruits </p>
-    <section id='wrapper2'  style={{display:'flex', overflow:'scroll', width:styles.width, color:'white', marginLeft:'%' , height:'fit-content'}}>
+    <section id='wrapper2'  style={{display:'flex', overflow:'scroll', width:innerWidth, color:'white',   height:'fit-content'}}>
     <div id="container2" style={{transform:'1.5s ease',display:'flex'}} >
     <div className="section_fruit" style={{display:'inline', justifyContent:'space-around', height:'auto', margin:'0px'}}>
     <section style={{display:'flex', zoom:'330%'}}>
         <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
-<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
- <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'5px', width: '30px'}}></div>
+ <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'5px', width: '30px'}}></div>
 
-<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
-<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
-<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'5px', width: '30px'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'5px', width: '30px'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'5px', width: '30px'}}></div>
 
 
-<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
- <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
- <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'6px', width: '30px'}}></div>
+<div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'5px', width: '30px'}}></div>
+ <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'5px', width: '30px'}}></div>
+ <div  className="items" style={{height: '50px',display:'flex',border:'1px solid rgb(188, 193, 205)',borderRadius:'5px',margin:'5px', width: '30px'}}></div>
 </section>
     </div>    </div>
     </section>
@@ -355,16 +356,16 @@ return(
     <section id='wrapper3'  style={{display:'flex', overflow:'scroll', width:styles.width, color:'white', marginLeft:'%' , height:'auto'}}>
     <div id="container3" style={{transform:'1.5s ease',display:'flex'}}>
     <div className="section_packaged" style={{display:'inline', justifyContent:'space-around', height:'300px', margin:'10px'}}>
-    <section style={{display:'flex', zoom:'330%'}}><div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
-<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
-<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+    <section style={{display:'flex', zoom:'330%'}}><div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
  
-<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
-<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
-<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div> 
-<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
-<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
-<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'6px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div> 
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
+<div   id='prod_five' className="items" style={{height: '50px',display:'flex',borderRadius:'5px',margin:'5px',   width:'30px', border: '1px solid rgb(202, 232, 232)'}}></div>
 </section>
 
     </div></div>

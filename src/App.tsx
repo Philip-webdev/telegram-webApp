@@ -1,12 +1,12 @@
 import "./App.css";
 import "./index.css";
-import { BsCalendar2, BsCalendarPlus, BsFillWalletFill, BsHeart, BsMinecart, BsStack, BsStackOverflow, BsStarFill, BsStars, BsWallet, BsWallet2, BsWalletFill} from 'react-icons/bs';
+ 
 import home  from './components/home';
-import mall from './components/order';
+ 
 import myProfile from './components/avatar';
 import { HashRouter, Route, Routes} from "react-router-dom";
 import styled from "styled-components";
-import { Button, FlexBoxCol, FlexBoxRow } from "./components/styled/styled";
+ 
 import "@twa-dev/sdk";
 import checkout from "./components/checkout";
 import miner from "./components/miner";
@@ -14,14 +14,12 @@ import favourites from "./components/fav";
 import order from "./components/order";
 import Frontier from "./components/showcaser";
 
-const Home = home;
-const avatar = myProfile;
-const Checkout = checkout;
+ 
 const StyledApp = styled.div`
   background-color: whitesmoke;
   color: black;
   border-radius: 17px;
-
+    position: fixed;
   @media (prefers-color-scheme: dark) {
     background-color: rgb(29, 40, 58);
     color: white;
