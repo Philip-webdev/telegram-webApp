@@ -1193,8 +1193,10 @@ PERFORMANCE OF THIS SOFTWARE.
 `;function myProfile(){const et=["https://img.freepik.com/premium-vector/free-vector-african-american-people-casual-wear-outfit_1000823-297012.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid","https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4350.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid","https://img.freepik.com/free-vector/hand-drawn-people-with-dreadlocks-illustration_23-2149752847.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid","https://img.freepik.com/premium-vector/high-angle-view-happy-female-business-professional-office_1120554-56460.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid","https://img.freepik.com/premium-vector/free-vector-african-american-people-casual-wear-outfit_1000823-297140.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid","https://img.freepik.com/free-vector/colorful-floral-shirt-avatar_1308-173336.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid"],tt={avaOne:"https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid",avaSet:""},[rt,nt]=reactExports.useState(jsx$1("img",{style:{borderRadius:"100%"},src:tt.avaOne,height:"100px",width:"100px"})),st=styled.div`
   background-color: whitesmoke;
   color: black;
-  position: fixed;
   
+  width: 100%;
+  height:100%;
+  margin: auto;
 
  
   @media (prefers-color-scheme: dark) {
