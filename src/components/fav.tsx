@@ -9,7 +9,7 @@ function favourites(){
     const StyledApp = styled.div`
     background-color: whitesmoke;
     color: black;
-    position: fixed;
+ 
     
   
    

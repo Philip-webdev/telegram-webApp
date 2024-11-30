@@ -10,7 +10,7 @@ import { Button } from "./styled/styled";
 const StyledApp = styled.div`
   background-color: #e8e8e8;
   color: black;
-  position: fixed;
+ 
  
   @media (prefers-color-scheme: dark) {
     background-color:  rgb(29, 40, 58);

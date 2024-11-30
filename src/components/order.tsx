@@ -6,7 +6,7 @@ import { Button } from "./styled/styled";
 const StyledApp = styled.div`
   background-color: whitesmoke;
   color: black;
-  position: fixed;
+  
   
 
  

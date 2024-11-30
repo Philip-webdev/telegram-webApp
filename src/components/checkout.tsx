@@ -17,7 +17,7 @@ import { FaGamepad } from "react-icons/fa";
 const StyledApp = styled.div`
   background-color: whitesmoke;
   color: black;
-   position: fixed;
+  
    font-family:'Lexend';
 
   @media (prefers-color-scheme: dark) {
