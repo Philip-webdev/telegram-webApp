@@ -11,7 +11,7 @@ import { FaAppleAlt,  FaBreadSlice, FaFire, FaGamepad, FaGetPocket, FaGift} from
 
 
 const StyledApp = styled.div`
-  background-color: whitesmoke;
+  background-color: white;
   color: black;
   border-radius: 17px;
   position:;
@@ -244,7 +244,7 @@ return(
 <div style={{width:'100%'}}>
     <StyledApp>
        <AppContainer>
-    <div onLoad={onSubmitPersonalData} className="header" style={{display:'flex', justifyContent:'space-between', zoom:'80%' }}>
+    <div onLoad={onSubmitPersonalData} className="header" style={{display:'flex', justifyContent:'space-between', zoom:'80%'}}>
         <div style={{ marginLeft: '5px'}}>Hi, {fren}</div><div style={{textAlign:'center'}}>GroTon</div><div style={{borderRadius:'100%', borderColor:'blue'}}><a href='#/profile' style={{color:'black', textDecoration:'none'}}><img style={{borderRadius:'100%', width:'20px', height:'20px'}} src='https://img.freepik.com/premium-vector/happy-black-people-vector-illustration_1213699-4307.jpg?ga=GA1.1.478922520.1717005114&semt=ais_hybrid'/></a></div>
         </div>
 

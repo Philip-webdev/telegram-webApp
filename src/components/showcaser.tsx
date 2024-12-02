@@ -1,6 +1,7 @@
 import 'react-icons/bs';
 import styled from "styled-components";
 import { Button } from "./styled/styled";
+import { url } from 'inspector';
 
 
 
@@ -19,16 +20,16 @@ const StyledApp = styled.div`
 const AppContainer = styled.div`
   width: 100%;
   height:100%;
-  margin: 0 auto;
+  margin: 0;
 `;
 function Frontier(){
 
 
     return(
-        <div style={{width:'100%'}}>
+        <div >
         
-         <AppContainer>
-           <div>
+         <AppContainer >
+           <div >
             <h1 style={{textAlign:'center', fontSize:'larger'}}>Welcome to GroTon</h1>
             <p style={{textAlign:'center'}}>Telegram's first fiat and web3 
            Grocery Market</p>
