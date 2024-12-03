@@ -17,7 +17,7 @@ import { FaGamepad } from "react-icons/fa";
 const StyledApp = styled.div`
   background-color: whitesmoke;
   color: black;
-  
+   width:100%;
    font-family:'Lexend';
 
   @media (prefers-color-scheme: dark) {
@@ -25,12 +25,13 @@ const StyledApp = styled.div`
     color: white;
   }
   min-height: 90vh;
-  padding: 20px 17px;
+  padding: 20px 20px;
 `;
 
 const AppContainer = styled.div`
   max-width: 900px;
-  margin: 0 auto;
+   width:100%;
+  margin: 0;
 `;
 
 function checkout() {
