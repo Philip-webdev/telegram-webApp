@@ -49,7 +49,7 @@ function App() {
     <Route path="/orders" Component={order}/>
     </Routes>
   </HashRouter>
-  <StyledApp style={{backgroundImage: 'url("https://i.imgur.com/EHAMVNs.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
+  <StyledApp style={{backgroundImage: 'url("https://i.imgur.com/EHAMVNs.jpeg?1")', backgroundSize: 'cover', backgroundPosition: 'center'}}>
 
     <Frontier/>
  

@@ -29,7 +29,7 @@ function Frontier(){
         <div >
         
          <AppContainer >
-           <div >
+           <div style={{color:'white'}}>
             <h1 style={{textAlign:'center', fontSize:'larger'}}>Welcome to GroTon</h1>
             <p style={{textAlign:'center'}}>Telegram's first fiat and web3 
            Grocery Market</p>
