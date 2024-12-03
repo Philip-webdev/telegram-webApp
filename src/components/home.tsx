@@ -11,7 +11,7 @@ import { FaAppleAlt,  FaBreadSlice, FaFire, FaGamepad, FaGetPocket, FaGift} from
 
 
 const StyledApp = styled.div`
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   border-radius: 17px;
   position:;
