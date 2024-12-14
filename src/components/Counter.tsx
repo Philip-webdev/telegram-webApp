@@ -25,7 +25,7 @@ export function Counter() {
             <b>Address</b>
             <Ellipsis style={{width:'40%'}}>{address}</Ellipsis>
           </FlexBoxRow>
-          <FlexBoxRow>=
+          <FlexBoxRow>
             <b>Value</b>
             <div>{value ?? "Loading..."}</div>
           </FlexBoxRow>
